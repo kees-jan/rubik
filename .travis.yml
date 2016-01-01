@@ -1,0 +1,27 @@
+language: cpp
+script:
+- make -k -j 
+- LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(pwd)/_lib test/_bin/main
+- test -z "$(build_scripts/travis/extra-targets)" || make -k -j $(build_scripts/travis/extra-targets)
+- ./build_scripts/travis/upload_doxygen_to_github
+addons:
+  apt:
+    packages:
+    - libboost-dev
+    - libboost-filesystem-dev
+    - libboost-program-options-dev
+    - libboost-system-dev
+    - libboost-thread-dev
+    - doxygen
+    - graphviz
+    - google-mock
+    - libgtest-dev
+sudo: required
+dist: trusty
+before_install:
+- openssl aes-256-cbc -K $encrypted_a89de7ab46da_key -iv $encrypted_a89de7ab46da_iv
+  -in build_scripts/travis/config/travisci_rsa.enc -out build_scripts/travis/config/travisci_rsa -d
+- chmod 0600 build_scripts/travis/config/travisci_rsa
+- cp build_scripts/travis/config/travisci_rsa ~/.ssh/id_rsa
+before_script:
+- ( cd /usr/src/gtest && sudo cmake . && sudo make && sudo mv -v libg* /usr/lib )

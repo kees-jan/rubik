@@ -1,3 +1,6 @@
+SUBDIRS=test
+
 include master-dir.mk
 
-SUBDIRS=test
+silent-doxygen:
+	@doxygen > doxygen.log 2>&1

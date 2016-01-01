@@ -1,4 +1,6 @@
+/html
 _bin
 _lib
 _obj
 *~
+doxygen.log
