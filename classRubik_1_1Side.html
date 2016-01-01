@@ -124,16 +124,32 @@ Collaboration diagram for Rubik::Side:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a73be46545ed2b5c8f4b21dd150c9ea66"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classRubik_1_1Side.html">Side</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a></td></tr>
 <tr class="separator:a73be46545ed2b5c8f4b21dd150c9ea66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3344efdaeb52c7f3f6dd19c0104d8bee"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Data</a></td></tr>
+<tr class="separator:a3344efdaeb52c7f3f6dd19c0104d8bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0900ad588efd3874ca0836bf5e40cf4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#ad0900ad588efd3874ca0836bf5e40cf4">create</a> ()</td></tr>
-<tr class="separator:ad0900ad588efd3874ca0836bf5e40cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc478ec50b92c52590e52ee56b9b422f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#abc478ec50b92c52590e52ee56b9b422f">create</a> (<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Data</a> const &amp;data)</td></tr>
+<tr class="separator:abc478ec50b92c52590e52ee56b9b422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="side_8hh_source.html#l00008">8</a> of file <a class="el" href="side_8hh_source.html">side.hh</a>.</p>
+<p>Definition at line <a class="el" href="side_8hh_source.html#l00009">9</a> of file <a class="el" href="side_8hh_source.html">side.hh</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a3344efdaeb52c7f3f6dd19c0104d8bee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::array&lt;int,9&gt; <a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="side_8hh_source.html#l00013">13</a> of file <a class="el" href="side_8hh_source.html">side.hh</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a73be46545ed2b5c8f4b21dd150c9ea66"></a>
 <div class="memitem">
 <div class="memproto">
@@ -144,12 +160,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="side_8hh_source.html#l00011">11</a> of file <a class="el" href="side_8hh_source.html">side.hh</a>.</p>
+<p>Definition at line <a class="el" href="side_8hh_source.html#l00012">12</a> of file <a class="el" href="side_8hh_source.html">side.hh</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad0900ad588efd3874ca0836bf5e40cf4"></a>
+<a class="anchor" id="abc478ec50b92c52590e52ee56b9b422f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -159,7 +175,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Side::Ptr</a> Rubik::Side::create </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -174,7 +191,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a>();</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  }</div>
-<div class="ttc" id="classRubik_1_1Side_html_a73be46545ed2b5c8f4b21dd150c9ea66"><div class="ttname"><a href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Rubik::Side::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Side &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00011">side.hh:11</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_a73be46545ed2b5c8f4b21dd150c9ea66"><div class="ttname"><a href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Rubik::Side::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Side &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00012">side.hh:12</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -188,7 +205,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1Side.html">Side</a></li>
-    <li class="footer">Generated on Fri Jan 1 2016 18:06:30 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Fri Jan 1 2016 18:07:51 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

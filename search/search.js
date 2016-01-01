@@ -13,7 +13,7 @@ var indexSectionsWithContent =
   3: "as",
   4: "acehs",
   5: "ei",
-  6: "p",
+  6: "dp",
   7: "a",
   8: "derv"
 };
