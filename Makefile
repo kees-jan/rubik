@@ -1,4 +1,4 @@
-SUBDIRS=test
+SUBDIRS=src test
 
 include master-dir.mk
 

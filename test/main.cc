@@ -1,11 +1,5 @@
 #include <gtest/gtest.h>
 
-// TEST(Dummy, Dummy)
-// {
-//   // EXPECT_EQ(1, Factorial(0));
-// }
-
-
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);
