@@ -7,12 +7,15 @@
 
 var indexSectionsWithContent =
 {
-  0: "cprs",
-  1: "s",
-  2: "r",
-  3: "s",
-  4: "c",
-  5: "p"
+  0: "acdehiprsv",
+  1: "es",
+  2: "rs",
+  3: "as",
+  4: "acehs",
+  5: "ei",
+  6: "p",
+  7: "a",
+  8: "derv"
 };
 
 var indexSectionNames =
@@ -22,7 +25,10 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "typedefs"
+  5: "variables",
+  6: "typedefs",
+  7: "related",
+  8: "defines"
 };
 
 function convertToId(search)

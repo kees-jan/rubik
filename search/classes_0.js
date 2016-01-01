@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['side',['Side',['../classRubik_1_1Side.html',1,'Rubik']]]
+  ['errorsignalhandler',['ErrorSignalHandler',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html',1,'Scroom::Utils::Detail']]]
 ];
