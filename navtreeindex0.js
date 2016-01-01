@@ -1,0 +1,23 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[1,0],
+"classRubik_1_1Side.html":[1,0,0,0],
+"classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66":[1,0,0,0,0],
+"classRubik_1_1Side.html#ad0900ad588efd3874ca0836bf5e40cf4":[1,0,0,0,1],
+"classes.html":[1,1],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[2,0,1],
+"dir_bfccd401955b95cf8c75461437045ac0.html":[2,0,0],
+"files.html":[2,0],
+"functions.html":[1,2,0],
+"functions_func.html":[1,2,1],
+"functions_type.html":[1,2,2],
+"index.html":[],
+"namespaceRubik.html":[0,0,0],
+"namespaceRubik.html":[1,0,0],
+"namespaces.html":[0,0],
+"pages.html":[],
+"side_8cc.html":[2,0,1,0],
+"side_8cc_source.html":[2,0,1,0],
+"side_8hh.html":[2,0,0,0],
+"side_8hh_source.html":[2,0,0,0]
+};
