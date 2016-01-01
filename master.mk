@@ -46,7 +46,7 @@ SOURCES_MAIN_CXX := $(if $(wildcard *.cc),$(shell $(GREP) -l '^int main' $(wildc
 
 # A couple of standard CFLAGS and CPPFLAGS each application, library, ... should use
 CFLAGS += -Wall -Wextra  -ggdb3
-CXXFLAGS += -Wall -Wextra -ggdb3
+CXXFLAGS += -std=c++0x -ggdb3 -Wall -Wextra -Werror -Wsign-promo -Woverloaded-virtual -Wnon-virtual-dtor -Wfloat-equal -Wswitch-enum -Wcast-qual -Winit-self -Wuninitialized -Wredundant-decls -Wunused -Wwrite-strings -Wpointer-arith -W
 CPPFLAGS += -D_REENTRANT -DDEBUG -I.
 
 # Make sure everything is rebuild when the Makefile itself changes. The list now contains at least
