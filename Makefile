@@ -1,1 +1,3 @@
-master.mk
+include master-dir.mk
+
+SUBDIRS=test
