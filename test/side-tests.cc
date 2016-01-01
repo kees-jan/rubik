@@ -4,9 +4,11 @@
 
 using namespace Rubik;
 
-TEST(Side, Create)
+TEST(Side, Initialize)
 {
-  Side::Ptr side = Side::create();
+  Side::Data data = {0};
+  
+  Side::Ptr side = Side::create(data);
   
   // EXPECT_EQ(1, Factorial(0));
 }
