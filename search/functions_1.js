@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['create',['create',['../classRubik_1_1Side.html#abc478ec50b92c52590e52ee56b9b422f',1,'Rubik::Side']]]
+  ['bottom',['bottom',['../classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304',1,'Rubik::Orientation::bottom()'],['../namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79',1,'Rubik::bottom()']]]
 ];

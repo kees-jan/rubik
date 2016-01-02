@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ensure',['ensure',['../assertions_8hh.html#a0a6432d768e4a040089ea8b3c8b6b4f0',1,'assertions.hh']]],
-  ['errorsignalhandler',['ErrorSignalHandler',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html',1,'Scroom::Utils::Detail']]],
-  ['errorsignalhandler',['ErrorSignalHandler',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#a42e79353fbb1278bbe40d4814b17c71c',1,'Scroom::Utils::Detail::ErrorSignalHandler::ErrorSignalHandler()'],['../namespaceScroom_1_1Utils_1_1Detail.html#a7c1c38cf6641e94e7312bc79bc543c23',1,'Scroom::Utils::Detail::errorSignalHandler()']]]
+  ['data',['data',['../classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073',1,'Rubik::Side::data()'],['../classRubik_1_1Side.html#a8417070e0bf3b1828e69bcc1ec6fbe55',1,'Rubik::Side::data(int top)'],['../classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee',1,'Rubik::Side::Data()']]],
+  ['data_5f',['data_',['../classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53',1,'Rubik::Side']]],
+  ['defect',['defect',['../assertions_8hh.html#a53abbe0948aa9d052aecd95684b68190',1,'assertions.hh']]]
 ];

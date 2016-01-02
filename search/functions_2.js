@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['data',['../classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073',1,'Rubik::Side']]]
+  ['create',['create',['../classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505',1,'Rubik::Side']]]
 ];
