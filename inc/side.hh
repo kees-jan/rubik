@@ -12,8 +12,14 @@ namespace Rubik
     typedef boost::shared_ptr<Side> Ptr;
     typedef std::array<int,9> Data;
 
+  private:
+    Data data_;
+    
   public:
     static Ptr create(Data const& data);
+    Side(Data const& data);
+
+    Data data();
   };
 }
 

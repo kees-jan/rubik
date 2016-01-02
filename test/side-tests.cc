@@ -9,6 +9,6 @@ TEST(Side, Initialize)
   Side::Data data = {0};
   
   Side::Ptr side = Side::create(data);
-  
-  // EXPECT_EQ(1, Factorial(0));
+
+  EXPECT_EQ(data, side->data());
 }
