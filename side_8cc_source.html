@@ -203,6 +203,16 @@ $(document).ready(function(){initNavTree('side_8cc_source.html','');});
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">  100</a></span>&#160;std::ostream&amp; <a class="code" href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a> <span class="keyword">const</span>&amp; data)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  os &lt;&lt; std::endl</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[0] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[1] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[2] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[3] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[4] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[5] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[6] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[7] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[8] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 <div class="ttc" id="assertions_8hh_html_a53abbe0948aa9d052aecd95684b68190"><div class="ttname"><a href="assertions_8hh.html#a53abbe0948aa9d052aecd95684b68190">defect</a></div><div class="ttdeci">#define defect()</div><div class="ttdef"><b>Definition:</b> <a href="assertions_8hh_source.html#l00036">assertions.hh:36</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html_a88d1d4a325902071ce08b7f4c2142304"><div class="ttname"><a href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">Rubik::Orientation::bottom</a></div><div class="ttdeci">Orientation &amp; bottom(int b)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00013">side.cc:13</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a73be46545ed2b5c8f4b21dd150c9ea66"><div class="ttname"><a href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Rubik::Side::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Side &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00041">side.hh:41</a></div></div>
@@ -216,6 +226,7 @@ $(document).ready(function(){initNavTree('side_8cc_source.html','');});
 <div class="ttc" id="classRubik_1_1Side_html_accbe0c7bc5b82b06cae6ba536c4a4505"><div class="ttname"><a href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Rubik::Side::create</a></div><div class="ttdeci">static Ptr create(Data const &amp;data, Orientation const &amp;orientation)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00059">side.cc:59</a></div></div>
 <div class="ttc" id="side_8hh_html"><div class="ttname"><a href="side_8hh.html">side.hh</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html_ac12b7896a18f4d0ff2b7192cb5999e80"><div class="ttname"><a href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">Rubik::Orientation::left</a></div><div class="ttdeci">Orientation &amp; left(int l)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00019">side.cc:19</a></div></div>
+<div class="ttc" id="side_8cc_html_a5608313f0eeac3e576aad99e8a63b1b1"><div class="ttname"><a href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, Rubik::Side::Data const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00100">side.cc:100</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a0341e37b77fc3b7e4d86c3fab4a48b53"><div class="ttname"><a href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">Rubik::Side::data_</a></div><div class="ttdeci">Data data_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00045">side.hh:45</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a3344efdaeb52c7f3f6dd19c0104d8bee"><div class="ttname"><a href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a></div><div class="ttdeci">std::array&lt; int, 9 &gt; Data</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00042">side.hh:42</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a584a8b48fa07c7c719ee7a03885e4073"><div class="ttname"><a href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Rubik::Side::data</a></div><div class="ttdeci">Data data()</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00068">side.cc:68</a></div></div>
@@ -231,7 +242,7 @@ $(document).ready(function(){initNavTree('side_8cc_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="side_8cc.html">side.cc</a></li>
-    <li class="footer">Generated on Sun Jan 3 2016 11:46:15 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Sun Jan 3 2016 12:10:14 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

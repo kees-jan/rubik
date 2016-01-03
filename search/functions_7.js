@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['right',['../classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b',1,'Rubik::Orientation::right()'],['../namespaceRubik.html#a02324002cefec24f006baf371b343612',1,'Rubik::right()']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../side_8hh.html#a5608313f0eeac3e576aad99e8a63b1b1',1,'operator&lt;&lt;(std::ostream &amp;os, Rubik::Side::Data const &amp;data):&#160;side.cc'],['../side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1',1,'operator&lt;&lt;(std::ostream &amp;os, Rubik::Side::Data const &amp;data):&#160;side.cc']]]
 ];

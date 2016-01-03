@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['side',['Side',['../classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666',1,'Rubik::Side']]],
-  ['stacktrace',['stackTrace',['../namespaceScroom_1_1Utils_1_1Detail.html#a1e4d07474e3b790993ad09c22d4a2c3e',1,'Scroom::Utils::Detail']]]
+  ['right',['right',['../classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b',1,'Rubik::Orientation::right()'],['../namespaceRubik.html#a02324002cefec24f006baf371b343612',1,'Rubik::right()']]]
 ];
