@@ -24,6 +24,12 @@ namespace SideData
       2, 5, 8,
       1, 4, 7,
     };
+  const Side::Data left =
+    {
+      7, 4, 1,
+      8, 5, 2,
+      9, 6, 3,
+    };
 }
 
 TEST(Side, Initialize)
@@ -36,30 +42,55 @@ TEST(Side, Initialize)
   EXPECT_EQ(data, side->data());
 }
 
-TEST(Side, Perspective_top)
+class PerspectiveData
 {
+public:
+  Side::Data top;
+  Side::Data bottom;
+  Side::Data left;
+  Side::Data right;
+
+public:
+  PerspectiveData(Side::Data const& top, Side::Data const& bottom, Side::Data const& left, Side::Data const& right)
+    :top(top), bottom(bottom), left(left), right(right)
+  {}
+};
+
+class SidePerspective : public testing::TestWithParam<PerspectiveData>
+{
+};
+
+INSTANTIATE_TEST_CASE_P(Combinatorial, SidePerspective,
+                        testing::Values(PerspectiveData(SideData::top, SideData::bottom, SideData::left, SideData::right)));
+                                                               
+
+TEST_P(SidePerspective, Top)
+{
+  PerspectiveData const& data = GetParam();
   Orientation orientation = top(1).left(2).bottom(3).right(4);
   
-  Side::Ptr side = Side::create(SideData::top, orientation);
+  Side::Ptr side = Side::create(data.top, orientation);
 
-  EXPECT_EQ(SideData::top, side->data(1));
+  EXPECT_EQ(data.top, side->data(1));
 }
 
-TEST(Side, Perspective_bottom)
+TEST_P(SidePerspective, Bottom)
 {
+  PerspectiveData const& data = GetParam();
   Orientation orientation = top(1).left(2).bottom(3).right(4);
 
-  Side::Ptr side = Side::create(SideData::top, orientation);
+  Side::Ptr side = Side::create(data.top, orientation);
 
-  EXPECT_EQ(SideData::bottom, side->data(3));
+  EXPECT_EQ(data.bottom, side->data(3));
 }
 
-TEST(Side, Perspective_right)
+TEST_P(SidePerspective, Right)
 {
+  PerspectiveData const& data = GetParam();
   Orientation orientation = top(1).left(2).bottom(3).right(4);
 
-  Side::Ptr side = Side::create(SideData::top, orientation);
+  Side::Ptr side = Side::create(data.top, orientation);
 
-  EXPECT_EQ(SideData::right, side->data(4));
+  EXPECT_EQ(data.right, side->data(4));
 }
 
