@@ -83,6 +83,13 @@ namespace Rubik
           6, 5, 4,
           3, 2, 1,
         };
+    case 4:
+      return
+        {
+          3, 6, 9,
+          2, 5, 8,
+          1, 4, 7,
+        };
     default:
       defect();
     }

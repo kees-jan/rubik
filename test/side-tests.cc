@@ -18,6 +18,12 @@ namespace SideData
       6, 5, 4,
       3, 2, 1,
     };
+  const Side::Data right =
+    {
+      3, 6, 9,
+      2, 5, 8,
+      1, 4, 7,
+    };
 }
 
 TEST(Side, Initialize)
@@ -46,5 +52,14 @@ TEST(Side, Perspective_bottom)
   Side::Ptr side = Side::create(SideData::top, orientation);
 
   EXPECT_EQ(SideData::bottom, side->data(3));
+}
+
+TEST(Side, Perspective_right)
+{
+  Orientation orientation = top(1).left(2).bottom(3).right(4);
+
+  Side::Ptr side = Side::create(SideData::top, orientation);
+
+  EXPECT_EQ(SideData::right, side->data(4));
 }
 
