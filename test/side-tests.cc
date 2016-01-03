@@ -58,39 +58,34 @@ public:
 
 class SidePerspective : public testing::TestWithParam<PerspectiveData>
 {
+protected:
+  PerspectiveData const& data;
+  Orientation const& orientation;
+  Side::Ptr const side;
+  
+public:
+  SidePerspective()
+    : data(GetParam()),
+      orientation(top(1).left(2).bottom(3).right(4)),
+      side(Side::create(data.top, orientation))
+  {}
 };
 
 INSTANTIATE_TEST_CASE_P(Combinatorial, SidePerspective,
                         testing::Values(PerspectiveData(SideData::top, SideData::bottom, SideData::left, SideData::right)));
                                                                
-
 TEST_P(SidePerspective, Top)
 {
-  PerspectiveData const& data = GetParam();
-  Orientation orientation = top(1).left(2).bottom(3).right(4);
-  
-  Side::Ptr side = Side::create(data.top, orientation);
-
   EXPECT_EQ(data.top, side->data(1));
 }
 
 TEST_P(SidePerspective, Bottom)
 {
-  PerspectiveData const& data = GetParam();
-  Orientation orientation = top(1).left(2).bottom(3).right(4);
-
-  Side::Ptr side = Side::create(data.top, orientation);
-
   EXPECT_EQ(data.bottom, side->data(3));
 }
 
 TEST_P(SidePerspective, Right)
 {
-  PerspectiveData const& data = GetParam();
-  Orientation orientation = top(1).left(2).bottom(3).right(4);
-
-  Side::Ptr side = Side::create(data.top, orientation);
-
   EXPECT_EQ(data.right, side->data(4));
 }
 
