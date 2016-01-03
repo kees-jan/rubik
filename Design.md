@@ -14,7 +14,9 @@ The idea is to simulate a Rubik's cube.
     
   * Cube
   
-    Rotating cube with more operations. Turn counter-clockwise, turn middle layers, etc.
+    Rotating cube with more operations. Turn counter-clockwise, turn
+    middle layers, etc. Ultimate goal is to implement all operations
+    found [here](http://ruwix.com/the-rubiks-cube/notation/advanced/)
     
 ## Detailed design
 

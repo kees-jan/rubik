@@ -49,6 +49,17 @@ namespace Rubik
     Side(Data const& data);
 
     Data data();
+
+    /**
+     * Retrieve side data from different perspectives.
+     *
+     * Side is oriented relative to the center squares of its
+     * neighbouring sides. This function allows you to "rotate the
+     * cube" by specifying what is the color of the center square of
+     * the top neighbouring side. This function will then return the
+     * colors of the squares properly adjusted for this new
+     * orientation.
+     */
     Data data(int top);
   };
 }

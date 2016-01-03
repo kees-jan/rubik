@@ -1,5 +1,7 @@
 #include <side.hh>
 
+#include <scroom/assertions.hh>
+
 namespace Rubik
 {
   Orientation& Orientation::top(int t)
@@ -68,9 +70,22 @@ namespace Rubik
     return data_;
   }
 
-  Side::Data Side::data(int)
+  Side::Data Side::data(int top)
   {
-    return data();
+    switch(top)
+    {
+    case 1:
+      return data();
+    case 3:
+      return
+        {
+          9, 8, 7,
+          6, 5, 4,
+          3, 2, 1,
+        };
+    default:
+      defect();
+    }
   }
 
 }
