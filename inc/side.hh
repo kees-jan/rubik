@@ -64,4 +64,7 @@ namespace Rubik
   };
 }
 
+std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data);
+
+
 #endif

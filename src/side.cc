@@ -96,3 +96,13 @@ namespace Rubik
   }
 
 }
+
+std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data)
+{
+  os << std::endl
+     << '[' << data[0] << ' ' << data[1] << ' ' << data[2] << ']' << std::endl
+     << '[' << data[3] << ' ' << data[4] << ' ' << data[5] << ']' << std::endl
+     << '[' << data[6] << ' ' << data[7] << ' ' << data[8] << ']' << std::endl;
+    
+  return os;
+}

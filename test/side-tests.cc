@@ -56,6 +56,16 @@ public:
   {}
 };
 
+std::ostream& operator<<(std::ostream& os, PerspectiveData const& data)
+{
+  os << std::endl;
+  os << "Top:    " << data.top ;
+  os << "Bottom: " << data.bottom;
+  os << "Left:   " << data.left;
+  os << "Right:  " << data.right;
+  return os;
+}
+
 class SidePerspective : public testing::TestWithParam<PerspectiveData>
 {
 protected:
