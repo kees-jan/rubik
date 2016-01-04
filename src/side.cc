@@ -79,16 +79,16 @@ namespace Rubik
     case 3:
       return
         {
-          9, 8, 7,
-          6, 5, 4,
-          3, 2, 1,
+          data_[8], data_[7], data_[6],
+          data_[5], data_[4], data_[3],
+          data_[2], data_[1], data_[0],
         };
     case 4:
       return
-        {
-          3, 6, 9,
-          2, 5, 8,
-          1, 4, 7,
+      {
+          data_[2], data_[5], data_[8],
+          data_[1], data_[4], data_[7],
+          data_[0], data_[3], data_[6],
         };
     default:
       defect();
