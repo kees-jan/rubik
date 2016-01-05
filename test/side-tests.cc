@@ -70,7 +70,7 @@ class SidePerspective : public testing::TestWithParam<PerspectiveData>
 {
 protected:
   PerspectiveData const& data;
-  Orientation const& orientation;
+  Orientation const orientation;
   Side::Ptr const side;
   
 public:
@@ -88,16 +88,16 @@ INSTANTIATE_TEST_CASE_P(Combinatorial, SidePerspective,
                                                                
 TEST_P(SidePerspective, Top)
 {
-  EXPECT_EQ(data.top, side->data(1));
+  EXPECT_EQ(data.top, side->data(*orientation.top_));
 }
 
 TEST_P(SidePerspective, Bottom)
 {
-  EXPECT_EQ(data.bottom, side->data(3));
+  EXPECT_EQ(data.bottom, side->data(*orientation.bottom_));
 }
 
 TEST_P(SidePerspective, Right)
 {
-  EXPECT_EQ(data.right, side->data(4));
+  EXPECT_EQ(data.right, side->data(*orientation.right_));
 }
 
