@@ -1,5 +1,7 @@
 #include <side.hh>
 
+#include <tuple>
+
 #include <gtest/gtest.h>
 
 using namespace Rubik;
@@ -51,6 +53,9 @@ public:
   Side::Data right;
 
 public:
+  PerspectiveData()
+  {}
+  
   PerspectiveData(Side::Data const& top, Side::Data const& bottom, Side::Data const& left, Side::Data const& right)
     :top(top), bottom(bottom), left(left), right(right)
   {}
@@ -66,25 +71,28 @@ std::ostream& operator<<(std::ostream& os, PerspectiveData const& data)
   return os;
 }
 
-class SidePerspective : public testing::TestWithParam<PerspectiveData>
+class SidePerspective : public testing::TestWithParam<std::tr1::tuple<Orientation,PerspectiveData> >
 {
 protected:
-  PerspectiveData const& data;
   Orientation const orientation;
+  PerspectiveData const data;
   Side::Ptr const side;
   
 public:
   SidePerspective()
-    : data(GetParam()),
-      orientation(top(1).left(2).bottom(3).right(4)),
+    : orientation(std::tr1::get<0>(GetParam())),
+      data(std::tr1::get<1>(GetParam())),
       side(Side::create(data.top, orientation))
   {}
 };
 
-INSTANTIATE_TEST_CASE_P(Combinatorial, SidePerspective,
-                        testing::Values(PerspectiveData(SideData::top, SideData::bottom, SideData::left, SideData::right),
-                                        PerspectiveData(SideData::left, SideData::right, SideData::bottom, SideData::top)
-                                        ));
+INSTANTIATE_TEST_CASE_P
+(Combinatorial, SidePerspective,
+ testing::Combine(
+                  testing::Values(top(1).left(2).bottom(3).right(4)),
+                  testing::Values(PerspectiveData(SideData::top, SideData::bottom, SideData::left, SideData::right),
+                                  PerspectiveData(SideData::left, SideData::right, SideData::bottom, SideData::top)
+                                  )));
                                                                
 TEST_P(SidePerspective, Top)
 {
