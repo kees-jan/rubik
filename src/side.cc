@@ -2,6 +2,16 @@
 
 #include <scroom/assertions.hh>
 
+namespace
+{
+  std::array<int, 9> RotateHalf =
+    {
+      8, 7, 6,
+      5, 4, 3,
+      2, 1, 0,
+    };
+}
+
 namespace Rubik
 {
   Orientation& Orientation::top(int t)
@@ -95,9 +105,9 @@ namespace Rubik
     case 3:
       return
         {
-          data_[8], data_[7], data_[6],
-          data_[5], data_[4], data_[3],
-          data_[2], data_[1], data_[0],
+          data_[RotateHalf[0]], data_[RotateHalf[1]], data_[RotateHalf[2]],
+          data_[RotateHalf[3]], data_[RotateHalf[4]], data_[RotateHalf[5]],
+          data_[RotateHalf[6]], data_[RotateHalf[7]], data_[RotateHalf[8]],
         };
     case 4:
       return
