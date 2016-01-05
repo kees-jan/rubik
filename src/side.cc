@@ -31,29 +31,25 @@ namespace Rubik
   Orientation top(int t)
   {
     Orientation o;
-    o.top_ = t;
-    return o;
+    return o.top(t);
   }
   
   Orientation bottom(int b)
   {
     Orientation o;
-    o.bottom_ = b;
-    return o;
+    return o.bottom(b);
   }
 
   Orientation left(int l)
   {
     Orientation o;
-    o.left_ = l;
-    return o;
+    return o.left(l);
   }
 
   Orientation right(int r)
   {
     Orientation o;
-    o.right_ = r;
-    return o;
+    return o.right(r);
   }
   
   Side::Ptr Side::create(Side::Data const& data, Orientation const&)
