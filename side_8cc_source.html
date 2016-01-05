@@ -109,160 +109,175 @@ $(document).ready(function(){initNavTree('side_8cc_source.html','');});
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="assertions_8hh.html">scroom/assertions.hh</a>&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Rubik</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02side_8cc_03.html">    5</a></span>&#160;<span class="keyword">namespace</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">    7</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">Orientation::top</a>(<span class="keywordtype">int</span> t)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">top_</a> = t;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">   13</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">Orientation::bottom</a>(<span class="keywordtype">int</span> b)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">bottom_</a> = b;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">   19</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">Orientation::left</a>(<span class="keywordtype">int</span> l)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">left_</a> = l;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b">   25</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">Orientation::right</a>(<span class="keywordtype">int</span> r)</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">    7</a></span>&#160;  std::array&lt;int, 9&gt; <a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">RotateHalf</a> =</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      8, 7, 6,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      5, 4, 3,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      2, 1, 0,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02side_8cc_03.html#a04e19bcd412b1f63b0aa50338c4099ae">   14</a></span>&#160;  std::array&lt;int, 9&gt; <a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#a04e19bcd412b1f63b0aa50338c4099ae">transform</a>(std::array&lt;int, 9&gt; <span class="keyword">const</span>&amp; transformation, std::array&lt;int, 9&gt; <span class="keyword">const</span>&amp; data)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::array&lt;int, 9&gt; result;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;9; i++)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      result[i] = data[transformation[i]];</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>Rubik</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">   25</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">Orientation::top</a>(<span class="keywordtype">int</span> t)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">right_</a> = r;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">top_</a> = t;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">   31</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">Orientation::top</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">top_</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">   36</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">Orientation::bottom</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">bottom_</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">   41</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">Orientation::left</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">left_</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">   46</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">Orientation::right</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">right_</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">   51</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>(<span class="keywordtype">int</span> t)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">top</a>(t);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79">   57</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79">bottom</a>(<span class="keywordtype">int</span> b)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">bottom</a>(b);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c">   63</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c">left</a>(<span class="keywordtype">int</span> l)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">left</a>(l);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">   31</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">Orientation::bottom</a>(<span class="keywordtype">int</span> b)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">bottom_</a> = b;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">   37</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">Orientation::left</a>(<span class="keywordtype">int</span> l)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">left_</a> = l;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b">   43</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a>&amp; <a class="code" href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">Orientation::right</a>(<span class="keywordtype">int</span> r)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">right_</a> = r;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">   49</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">Orientation::top</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">top_</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">   54</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">Orientation::bottom</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">bottom_</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">   59</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">Orientation::left</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">left_</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">   64</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">Orientation::right</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">right_</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespaceRubik.html#a02324002cefec24f006baf371b343612">   69</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#a02324002cefec24f006baf371b343612">right</a>(<span class="keywordtype">int</span> r)</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">   69</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>(<span class="keywordtype">int</span> t)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b">right</a>(r);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">top</a>(t);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">   75</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Side::Ptr</a> <a class="code" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Side::create</a>(<a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <span class="keyword">const</span>&amp; data, <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <span class="keyword">const</span>&amp;)</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79">   75</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79">bottom</a>(<span class="keywordtype">int</span> b)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">Side</a>(data));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">   80</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">Side::Side</a>(<a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <span class="keyword">const</span>&amp; data)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    : data_(data)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  {}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">   84</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Side::data</a>()</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#a8417070e0bf3b1828e69bcc1ec6fbe55">   89</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Side::data</a>(<span class="keywordtype">int</span> <a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">switch</span>(top)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>[8], <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>[7], data_[6],</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;          data_[5], data_[4], data_[3],</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          data_[2], data_[1], data_[0],</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        };</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">return</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>[2], <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>[5], data_[8],</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          data_[1], data_[4], data_[7],</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          data_[0], data_[3], data_[6],</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        };</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <a class="code" href="assertions_8hh.html#a53abbe0948aa9d052aecd95684b68190">defect</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">  116</a></span>&#160;std::ostream&amp; <a class="code" href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a> <span class="keyword">const</span>&amp; data)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  os &lt;&lt; std::endl</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[0] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[1] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[2] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[3] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[4] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[5] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[6] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[7] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[8] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">bottom</a>(b);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c">   81</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c">left</a>(<span class="keywordtype">int</span> l)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">left</a>(l);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="namespaceRubik.html#a02324002cefec24f006baf371b343612">   87</a></span>&#160;  <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <a class="code" href="namespaceRubik.html#a02324002cefec24f006baf371b343612">right</a>(<span class="keywordtype">int</span> r)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> o;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> o.<a class="code" href="classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b">right</a>(r);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">   93</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Side::Ptr</a> <a class="code" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Side::create</a>(<a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <span class="keyword">const</span>&amp; data, <a class="code" href="classRubik_1_1Orientation.html">Orientation</a> <span class="keyword">const</span>&amp;)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">Side</a>(data));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">   98</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">Side::Side</a>(<a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <span class="keyword">const</span>&amp; data)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    : data_(data)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">  102</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Side::data</a>()</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classRubik_1_1Side.html#a8417070e0bf3b1828e69bcc1ec6fbe55">  107</a></span>&#160;  <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Side::data</a>(<span class="keywordtype">int</span> <a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">switch</span>(top)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#a04e19bcd412b1f63b0aa50338c4099ae">transform</a>(<a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">RotateHalf</a>, <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>[2], <a class="code" href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">data_</a>[5], data_[8],</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          data_[1], data_[4], data_[7],</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          data_[0], data_[3], data_[6],</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        };</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <a class="code" href="assertions_8hh.html#a53abbe0948aa9d052aecd95684b68190">defect</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">  129</a></span>&#160;std::ostream&amp; <a class="code" href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a> <span class="keyword">const</span>&amp; data)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  os &lt;&lt; std::endl</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[0] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[1] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[2] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[3] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[4] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[5] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;     &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; data[6] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[7] &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; data[8] &lt;&lt; <span class="charliteral">&#39;]&#39;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 <div class="ttc" id="assertions_8hh_html_a53abbe0948aa9d052aecd95684b68190"><div class="ttname"><a href="assertions_8hh.html#a53abbe0948aa9d052aecd95684b68190">defect</a></div><div class="ttdeci">#define defect()</div><div class="ttdef"><b>Definition:</b> <a href="assertions_8hh_source.html#l00036">assertions.hh:36</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_a88d1d4a325902071ce08b7f4c2142304"><div class="ttname"><a href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">Rubik::Orientation::bottom</a></div><div class="ttdeci">Orientation &amp; bottom(int b)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00013">side.cc:13</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a88d1d4a325902071ce08b7f4c2142304"><div class="ttname"><a href="classRubik_1_1Orientation.html#a88d1d4a325902071ce08b7f4c2142304">Rubik::Orientation::bottom</a></div><div class="ttdeci">Orientation &amp; bottom(int b)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00031">side.cc:31</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a73be46545ed2b5c8f4b21dd150c9ea66"><div class="ttname"><a href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Rubik::Side::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; Side &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00046">side.hh:46</a></div></div>
-<div class="ttc" id="namespaceRubik_html_a02324002cefec24f006baf371b343612"><div class="ttname"><a href="namespaceRubik.html#a02324002cefec24f006baf371b343612">Rubik::right</a></div><div class="ttdeci">Orientation right(int r)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00069">side.cc:69</a></div></div>
+<div class="ttc" id="namespaceRubik_html_a02324002cefec24f006baf371b343612"><div class="ttname"><a href="namespaceRubik.html#a02324002cefec24f006baf371b343612">Rubik::right</a></div><div class="ttdeci">Orientation right(int r)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00087">side.cc:87</a></div></div>
+<div class="ttc" id="namespaceanonymous__namespace_02side_8cc_03_html_aadc43cf0511a8f240d6b806d9607559f"><div class="ttname"><a href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">anonymous_namespace{side.cc}::RotateHalf</a></div><div class="ttdeci">std::array&lt; int, 9 &gt; RotateHalf</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00007">side.cc:7</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html_a26b0612bf4f8f29514470272c8109790"><div class="ttname"><a href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">Rubik::Orientation::bottom_</a></div><div class="ttdeci">boost::optional&lt; int &gt; bottom_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00014">side.hh:14</a></div></div>
-<div class="ttc" id="namespaceRubik_html_a2c2dde5401477b6af3f1b6bc22d83683"><div class="ttname"><a href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">Rubik::top</a></div><div class="ttdeci">Orientation top(int t)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00051">side.cc:51</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_aac148ddc336d3f1c2de5fdd26cf66380"><div class="ttname"><a href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">Rubik::Orientation::top</a></div><div class="ttdeci">Orientation &amp; top(int t)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00007">side.cc:7</a></div></div>
+<div class="ttc" id="namespaceRubik_html_a2c2dde5401477b6af3f1b6bc22d83683"><div class="ttname"><a href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">Rubik::top</a></div><div class="ttdeci">Orientation top(int t)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00069">side.cc:69</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_aac148ddc336d3f1c2de5fdd26cf66380"><div class="ttname"><a href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">Rubik::Orientation::top</a></div><div class="ttdeci">Orientation &amp; top(int t)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00025">side.cc:25</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html_a555e3b17470ed87d48784f084e9cf852"><div class="ttname"><a href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">Rubik::Orientation::left_</a></div><div class="ttdeci">boost::optional&lt; int &gt; left_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00015">side.hh:15</a></div></div>
-<div class="ttc" id="classRubik_1_1Side_html_a85d9a6cd66968b5174ffbfebc971f666"><div class="ttname"><a href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">Rubik::Side::Side</a></div><div class="ttdeci">Side(Data const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00080">side.cc:80</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_a929cd5e546eefbcbfe1c24a843fa039d"><div class="ttname"><a href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">Rubik::Orientation::bottom</a></div><div class="ttdeci">int bottom() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00036">side.cc:36</a></div></div>
-<div class="ttc" id="namespaceRubik_html_aa5cb303cc22a880de431c5c9232fa54c"><div class="ttname"><a href="namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c">Rubik::left</a></div><div class="ttdeci">Orientation left(int l)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00063">side.cc:63</a></div></div>
-<div class="ttc" id="classRubik_1_1Side_html_accbe0c7bc5b82b06cae6ba536c4a4505"><div class="ttname"><a href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Rubik::Side::create</a></div><div class="ttdeci">static Ptr create(Data const &amp;data, Orientation const &amp;orientation)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00075">side.cc:75</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_a85d9a6cd66968b5174ffbfebc971f666"><div class="ttname"><a href="classRubik_1_1Side.html#a85d9a6cd66968b5174ffbfebc971f666">Rubik::Side::Side</a></div><div class="ttdeci">Side(Data const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00098">side.cc:98</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a929cd5e546eefbcbfe1c24a843fa039d"><div class="ttname"><a href="classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d">Rubik::Orientation::bottom</a></div><div class="ttdeci">int bottom() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00054">side.cc:54</a></div></div>
+<div class="ttc" id="namespaceRubik_html_aa5cb303cc22a880de431c5c9232fa54c"><div class="ttname"><a href="namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c">Rubik::left</a></div><div class="ttdeci">Orientation left(int l)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00081">side.cc:81</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_accbe0c7bc5b82b06cae6ba536c4a4505"><div class="ttname"><a href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Rubik::Side::create</a></div><div class="ttdeci">static Ptr create(Data const &amp;data, Orientation const &amp;orientation)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00093">side.cc:93</a></div></div>
 <div class="ttc" id="side_8hh_html"><div class="ttname"><a href="side_8hh.html">side.hh</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_ac12b7896a18f4d0ff2b7192cb5999e80"><div class="ttname"><a href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">Rubik::Orientation::left</a></div><div class="ttdeci">Orientation &amp; left(int l)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00019">side.cc:19</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_a705462fc2f4bebcfb8fd40efb46e2d74"><div class="ttname"><a href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">Rubik::Orientation::right</a></div><div class="ttdeci">int right() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00046">side.cc:46</a></div></div>
-<div class="ttc" id="side_8cc_html_a5608313f0eeac3e576aad99e8a63b1b1"><div class="ttname"><a href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, Rubik::Side::Data const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00116">side.cc:116</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_ac12b7896a18f4d0ff2b7192cb5999e80"><div class="ttname"><a href="classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80">Rubik::Orientation::left</a></div><div class="ttdeci">Orientation &amp; left(int l)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00037">side.cc:37</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a705462fc2f4bebcfb8fd40efb46e2d74"><div class="ttname"><a href="classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74">Rubik::Orientation::right</a></div><div class="ttdeci">int right() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00064">side.cc:64</a></div></div>
+<div class="ttc" id="side_8cc_html_a5608313f0eeac3e576aad99e8a63b1b1"><div class="ttname"><a href="side_8cc.html#a5608313f0eeac3e576aad99e8a63b1b1">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, Rubik::Side::Data const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00129">side.cc:129</a></div></div>
+<div class="ttc" id="namespaceanonymous__namespace_02side_8cc_03_html_a04e19bcd412b1f63b0aa50338c4099ae"><div class="ttname"><a href="namespaceanonymous__namespace_02side_8cc_03.html#a04e19bcd412b1f63b0aa50338c4099ae">anonymous_namespace{side.cc}::transform</a></div><div class="ttdeci">std::array&lt; int, 9 &gt; transform(std::array&lt; int, 9 &gt; const &amp;transformation, std::array&lt; int, 9 &gt; const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00014">side.cc:14</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a0341e37b77fc3b7e4d86c3fab4a48b53"><div class="ttname"><a href="classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53">Rubik::Side::data_</a></div><div class="ttdeci">Data data_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00050">side.hh:50</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a3344efdaeb52c7f3f6dd19c0104d8bee"><div class="ttname"><a href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a></div><div class="ttdeci">std::array&lt; int, 9 &gt; Data</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00047">side.hh:47</a></div></div>
-<div class="ttc" id="classRubik_1_1Side_html_a584a8b48fa07c7c719ee7a03885e4073"><div class="ttname"><a href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Rubik::Side::data</a></div><div class="ttdeci">Data data()</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00084">side.cc:84</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_a584a8b48fa07c7c719ee7a03885e4073"><div class="ttname"><a href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Rubik::Side::data</a></div><div class="ttdeci">Data data()</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00102">side.cc:102</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html_a2be5a5d4bf2f82a932178178afe5c631"><div class="ttname"><a href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">Rubik::Orientation::right_</a></div><div class="ttdeci">boost::optional&lt; int &gt; right_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00016">side.hh:16</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html"><div class="ttname"><a href="classRubik_1_1Orientation.html">Rubik::Orientation</a></div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00010">side.hh:10</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_acc93a9c5017bdce3ef9086bb1be89675"><div class="ttname"><a href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">Rubik::Orientation::top</a></div><div class="ttdeci">int top() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00031">side.cc:31</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_acc93a9c5017bdce3ef9086bb1be89675"><div class="ttname"><a href="classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675">Rubik::Orientation::top</a></div><div class="ttdeci">int top() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00049">side.cc:49</a></div></div>
 <div class="ttc" id="classRubik_1_1Orientation_html_a0f3e8c47d78c49cb2ad9ca53fff1ecd3"><div class="ttname"><a href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">Rubik::Orientation::top_</a></div><div class="ttdeci">boost::optional&lt; int &gt; top_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00013">side.hh:13</a></div></div>
-<div class="ttc" id="namespaceRubik_html_a0259554d5f463044bfb34be0fbbcaf79"><div class="ttname"><a href="namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79">Rubik::bottom</a></div><div class="ttdeci">Orientation bottom(int b)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00057">side.cc:57</a></div></div>
+<div class="ttc" id="namespaceRubik_html_a0259554d5f463044bfb34be0fbbcaf79"><div class="ttname"><a href="namespaceRubik.html#a0259554d5f463044bfb34be0fbbcaf79">Rubik::bottom</a></div><div class="ttdeci">Orientation bottom(int b)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00075">side.cc:75</a></div></div>
 <div class="ttc" id="assertions_8hh_html"><div class="ttname"><a href="assertions_8hh.html">assertions.hh</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_ae1dfeef708cccc0b0748a00d0da691a1"><div class="ttname"><a href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">Rubik::Orientation::left</a></div><div class="ttdeci">int left() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00041">side.cc:41</a></div></div>
-<div class="ttc" id="classRubik_1_1Orientation_html_af76e8e06c0fb07be75431e5730a11d7b"><div class="ttname"><a href="classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b">Rubik::Orientation::right</a></div><div class="ttdeci">Orientation &amp; right(int r)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00025">side.cc:25</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_ae1dfeef708cccc0b0748a00d0da691a1"><div class="ttname"><a href="classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1">Rubik::Orientation::left</a></div><div class="ttdeci">int left() const </div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00059">side.cc:59</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_af76e8e06c0fb07be75431e5730a11d7b"><div class="ttname"><a href="classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b">Rubik::Orientation::right</a></div><div class="ttdeci">Orientation &amp; right(int r)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00043">side.cc:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="side_8cc.html">side.cc</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 14:04:35 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Tue Jan 5 2016 14:34:53 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

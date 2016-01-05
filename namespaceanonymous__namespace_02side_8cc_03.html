@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Rubik&#39;s cube simulator: Namespace Members</title>
+<title>Rubik&#39;s cube simulator: anonymous_namespace{side.cc} Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,14 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li class="current"><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="namespacemembers.html"><span>All</span></a></li>
-      <li><a href="namespacemembers_func.html"><span>Functions</span></a></li>
-      <li class="current"><a href="namespacemembers_vars.html"><span>Variables</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('namespacemembers_vars.html','');});
+$(document).ready(function(){initNavTree('namespaceanonymous__namespace_02side_8cc_03.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -107,20 +100,87 @@ $(document).ready(function(){initNavTree('namespacemembers_vars.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">anonymous_namespace{side.cc} Namespace Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>errorSignalHandler
-: <a class="el" href="namespaceScroom_1_1Utils_1_1Detail.html#a7c1c38cf6641e94e7312bc79bc543c23">Scroom::Utils::Detail</a>
-</li>
-<li>RotateHalf
-: <a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">anonymous_namespace{side.cc}</a>
-</li>
-</ul>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a04e19bcd412b1f63b0aa50338c4099ae"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html#a04e19bcd412b1f63b0aa50338c4099ae">transform</a> (std::array&lt; int, 9 &gt; const &amp;transformation, std::array&lt; int, 9 &gt; const &amp;data)</td></tr>
+<tr class="separator:a04e19bcd412b1f63b0aa50338c4099ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aadc43cf0511a8f240d6b806d9607559f"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">RotateHalf</a></td></tr>
+<tr class="separator:aadc43cf0511a8f240d6b806d9607559f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a04e19bcd412b1f63b0aa50338c4099ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int, 9&gt; anonymous_namespace{side.cc}::transform </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; int, 9 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>transformation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; int, 9 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00014">14</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::array&lt;int, 9&gt; result;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;9; i++)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      result[i] = data[transformation[i]];</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aadc43cf0511a8f240d6b806d9607559f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int, 9&gt; anonymous_namespace{side.cc}::RotateHalf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    {</div>
+<div class="line">      8, 7, 6,</div>
+<div class="line">      5, 4, 3,</div>
+<div class="line">      2, 1, 0,</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00007">7</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html">anonymous_namespace{side.cc}</a></li>
     <li class="footer">Generated on Tue Jan 5 2016 14:34:53 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
