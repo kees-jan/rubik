@@ -10,6 +10,14 @@ namespace
       5, 4, 3,
       2, 1, 0,
     };
+
+  std::array<int, 9> transform(std::array<int, 9> const& transformation, std::array<int, 9> const& data)
+  {
+    std::array<int, 9> result;
+    for(int i=0; i<9; i++)
+      result[i] = data[transformation[i]];
+    return result;
+  }
 }
 
 namespace Rubik
@@ -103,12 +111,7 @@ namespace Rubik
     case 1:
       return data();
     case 3:
-      return
-        {
-          data_[RotateHalf[0]], data_[RotateHalf[1]], data_[RotateHalf[2]],
-          data_[RotateHalf[3]], data_[RotateHalf[4]], data_[RotateHalf[5]],
-          data_[RotateHalf[6]], data_[RotateHalf[7]], data_[RotateHalf[8]],
-        };
+      return transform(RotateHalf, data_);
     case 4:
       return
       {
