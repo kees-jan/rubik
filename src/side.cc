@@ -11,6 +11,20 @@ namespace
       2, 1, 0,
     };
 
+  std::array<int, 9> RotateLeft =
+    {
+      2, 5, 8,
+      1, 4, 7,
+      0, 3, 6,
+    };
+
+  std::array<int, 9> RotateRight =
+    {
+      6, 3, 0,
+      7, 4, 1,
+      8, 5, 2,
+    };
+
   std::array<int, 9> transform(std::array<int, 9> const& transformation, std::array<int, 9> const& data)
   {
     std::array<int, 9> result;
@@ -110,15 +124,12 @@ namespace Rubik
     {
     case 1:
       return data();
+    case 2:
+      return transform(RotateRight, data_);
     case 3:
       return transform(RotateHalf, data_);
     case 4:
-      return
-      {
-          data_[2], data_[5], data_[8],
-          data_[1], data_[4], data_[7],
-          data_[0], data_[3], data_[6],
-        };
+      return transform(RotateLeft, data_);
     default:
       defect();
     }

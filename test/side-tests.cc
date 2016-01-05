@@ -101,3 +101,8 @@ TEST_P(SidePerspective, Right)
   EXPECT_EQ(data.right, side->data(orientation.right()));
 }
 
+TEST_P(SidePerspective, Left)
+{
+  EXPECT_EQ(data.left, side->data(orientation.left()));
+}
+
