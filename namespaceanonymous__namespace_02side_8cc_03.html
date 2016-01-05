@@ -118,6 +118,10 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aadc43cf0511a8f240d6b806d9607559f"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f">RotateHalf</a></td></tr>
 <tr class="separator:aadc43cf0511a8f240d6b806d9607559f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae348b5ec41c0ae678667e815706b9bf8"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html#ae348b5ec41c0ae678667e815706b9bf8">RotateLeft</a></td></tr>
+<tr class="separator:ae348b5ec41c0ae678667e815706b9bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328879d830080dcf7a336311dce03d7a"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html#a328879d830080dcf7a336311dce03d7a">RotateRight</a></td></tr>
+<tr class="separator:a328879d830080dcf7a336311dce03d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a04e19bcd412b1f63b0aa50338c4099ae"></a>
@@ -144,13 +148,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="side_8cc_source.html#l00014">14</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::array&lt;int, 9&gt; result;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;9; i++)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      result[i] = data[transformation[i]];</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00028">28</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::array&lt;int, 9&gt; result;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;9; i++)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      result[i] = data[transformation[i]];</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,13 +179,53 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae348b5ec41c0ae678667e815706b9bf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int, 9&gt; anonymous_namespace{side.cc}::RotateLeft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    {</div>
+<div class="line">      2, 5, 8,</div>
+<div class="line">      1, 4, 7,</div>
+<div class="line">      0, 3, 6,</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00014">14</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a328879d830080dcf7a336311dce03d7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int, 9&gt; anonymous_namespace{side.cc}::RotateRight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    {</div>
+<div class="line">      6, 3, 0,</div>
+<div class="line">      7, 4, 1,</div>
+<div class="line">      8, 5, 2,</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00021">21</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceanonymous__namespace_02side_8cc_03.html">anonymous_namespace{side.cc}</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 14:34:53 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Tue Jan 5 2016 14:48:54 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
