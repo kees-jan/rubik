@@ -4,6 +4,13 @@
 
 namespace
 {
+  std::array<int, 9> Identity =
+    {
+      0, 1, 2,
+      3, 4, 5,
+      6, 7, 8,
+    };
+  
   std::array<int, 9> RotateHalf =
     {
       8, 7, 6,
@@ -123,7 +130,7 @@ namespace Rubik
     switch(top)
     {
     case 1:
-      return data();
+      return transform(Identity, data_);
     case 2:
       return transform(RotateRight, data_);
     case 3:
