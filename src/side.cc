@@ -1,6 +1,10 @@
 #include <side.hh>
 
+#include <map>
+#include <boost/assign.hpp>
+
 #include <scroom/assertions.hh>
+
 
 namespace
 {
@@ -127,19 +131,16 @@ namespace Rubik
 
   Side::Data Side::data(int top)
   {
-    switch(top)
-    {
-    case 1:
-      return transform(Identity, data_);
-    case 2:
-      return transform(RotateRight, data_);
-    case 3:
-      return transform(RotateHalf, data_);
-    case 4:
-      return transform(RotateLeft, data_);
-    default:
-      defect();
-    }
+    std::map<int, std::array<int, 9> const> const transformations = boost::assign::map_list_of
+      (1, Identity)
+      (2, RotateRight)
+      (3, RotateHalf)
+      (4, RotateLeft);
+
+    std::map<int, std::array<int, 9> const>::const_iterator i = transformations.find(top);
+    require(i != transformations.end());
+
+    return transform(i->second, data_);
   }
 
 }
