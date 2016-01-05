@@ -28,6 +28,26 @@ namespace Rubik
     return *this;
   }
 
+  int Orientation::top() const
+  {
+    return *top_;
+  }
+  
+  int Orientation::bottom() const
+  {
+    return *bottom_;
+  }
+  
+  int Orientation::left() const
+  {
+    return *left_;
+  }
+  
+  int Orientation::right() const
+  {
+    return *right_;
+  }
+
   Orientation top(int t)
   {
     Orientation o;

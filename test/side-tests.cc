@@ -88,16 +88,16 @@ INSTANTIATE_TEST_CASE_P(Combinatorial, SidePerspective,
                                                                
 TEST_P(SidePerspective, Top)
 {
-  EXPECT_EQ(data.top, side->data(*orientation.top_));
+  EXPECT_EQ(data.top, side->data(orientation.top()));
 }
 
 TEST_P(SidePerspective, Bottom)
 {
-  EXPECT_EQ(data.bottom, side->data(*orientation.bottom_));
+  EXPECT_EQ(data.bottom, side->data(orientation.bottom()));
 }
 
 TEST_P(SidePerspective, Right)
 {
-  EXPECT_EQ(data.right, side->data(*orientation.right_));
+  EXPECT_EQ(data.right, side->data(orientation.right()));
 }
 

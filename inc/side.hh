@@ -9,7 +9,7 @@ namespace Rubik
 {
   class Orientation
   {
-  public:
+  private:
     boost::optional<int> top_;
     boost::optional<int> bottom_;
     boost::optional<int> left_;
@@ -20,6 +20,11 @@ namespace Rubik
     Orientation& bottom(int b);
     Orientation& left(int l);
     Orientation& right(int r);
+
+    int top() const;
+    int bottom() const;
+    int left() const;
+    int right() const;
   };
 
   Orientation top(int t);
