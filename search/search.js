@@ -14,7 +14,7 @@ var indexSectionsWithContent =
   4: "abcdehlorst",
   5: "bdeilrt",
   6: "dp",
-  7: "a",
+  7: "ao",
   8: "derv"
 };
 

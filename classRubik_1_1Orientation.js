@@ -8,6 +8,7 @@ var classRubik_1_1Orientation =
     [ "right", "classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74", null ],
     [ "top", "classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380", null ],
     [ "top", "classRubik_1_1Orientation.html#acc93a9c5017bdce3ef9086bb1be89675", null ],
+    [ "operator<<", "classRubik_1_1Orientation.html#afe1e6223f1c1e702ead6c61570792c6e", null ],
     [ "bottom_", "classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790", null ],
     [ "left_", "classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852", null ],
     [ "right_", "classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631", null ],
