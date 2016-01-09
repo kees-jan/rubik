@@ -137,10 +137,7 @@ namespace Rubik
       (3, RotateHalf)
       (4, RotateLeft);
 
-    std::map<int, std::array<int, 9> const>::const_iterator i = transformations.find(top);
-    require(i != transformations.end());
-
-    return transform(i->second, data_);
+    return transform(transformations.at(top), data_);
   }
 
 }
