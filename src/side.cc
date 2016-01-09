@@ -152,7 +152,7 @@ std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data)
   return os;
 }
 
-std::ostream& operator<<(std::ostream& os, Rubik::Orientation const & o)
+std::ostream& operator<<(std::ostream& os, Rubik::Orientation const& o)
 {
   os << '('
      << "Top: " << o.top_ << ", "

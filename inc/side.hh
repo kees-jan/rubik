@@ -80,4 +80,16 @@ namespace Rubik
 
 std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data);
 
+template<typename T>
+std::ostream& operator<<(std::ostream& os, boost::optional<T> const& v)
+{
+  if(v)
+    os << *v;
+  else
+    os << '-';
+  
+  return os;
+}
+
+
 #endif
