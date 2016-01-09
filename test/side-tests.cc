@@ -89,7 +89,8 @@ public:
 INSTANTIATE_TEST_CASE_P
 (Combinatorial, SidePerspective,
  testing::Combine(
-                  testing::Values(top(1).left(2).bottom(3).right(4)),
+                  testing::Values(top(1).left(2).bottom(3).right(4),
+                                  top(5).left(3).bottom(1).right(0)),
                   testing::Values(PerspectiveData(SideData::top, SideData::bottom, SideData::left, SideData::right),
                                   PerspectiveData(SideData::left, SideData::right, SideData::bottom, SideData::top)
                                   )));

@@ -57,10 +57,11 @@ namespace Rubik
 
   private:
     Data data_;
+    Orientation orientation_;
     
   public:
     static Ptr create(Data const& data, Orientation const& orientation);
-    Side(Data const& data);
+    Side(Data const& data, Orientation const& orientation);
 
     Data data();
 

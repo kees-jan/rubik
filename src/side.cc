@@ -115,13 +115,13 @@ namespace Rubik
     return o.right(r);
   }
   
-  Side::Ptr Side::create(Side::Data const& data, Orientation const&)
+  Side::Ptr Side::create(Side::Data const& data, Orientation const& orientation)
   {
-    return Ptr(new Side(data));
+    return Ptr(new Side(data, orientation));
   }
 
-  Side::Side(Side::Data const& data)
-    : data_(data)
+  Side::Side(Side::Data const& data, Orientation const& orientation)
+    : data_(data), orientation_(orientation)
   {}
 
   Side::Data Side::data()
@@ -132,10 +132,10 @@ namespace Rubik
   Side::Data Side::data(int top)
   {
     std::map<int, std::array<int, 9> const> const transformations = boost::assign::map_list_of
-      (1, Identity)
-      (2, RotateRight)
-      (3, RotateHalf)
-      (4, RotateLeft);
+      (orientation_.top(), Identity)
+      (orientation_.left(), RotateRight)
+      (orientation_.bottom(), RotateHalf)
+      (orientation_.right(), RotateLeft);
 
     return transform(transformations.at(top), data_);
   }
