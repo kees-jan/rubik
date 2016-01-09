@@ -33,6 +33,8 @@ namespace Rubik
     int left() const;
     int right() const;
 
+    std::array<int, 9> transformation(int top) const;
+
     friend std::ostream& ::operator<<(std::ostream& os, Rubik::Orientation const & o);
   };
 
