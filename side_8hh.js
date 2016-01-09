@@ -6,6 +6,7 @@ var side_8hh =
     [ "left", "side_8hh.html#aa5cb303cc22a880de431c5c9232fa54c", null ],
     [ "operator<<", "side_8hh.html#afe1e6223f1c1e702ead6c61570792c6e", null ],
     [ "operator<<", "side_8hh.html#a5608313f0eeac3e576aad99e8a63b1b1", null ],
+    [ "operator<<", "side_8hh.html#a098f42f91709da7dbcb9f2abe3f04d3e", null ],
     [ "right", "side_8hh.html#a02324002cefec24f006baf371b343612", null ],
     [ "top", "side_8hh.html#a2c2dde5401477b6af3f1b6bc22d83683", null ]
 ];
