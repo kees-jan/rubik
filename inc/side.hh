@@ -7,6 +7,13 @@
 
 namespace Rubik
 {
+  class Orientation;
+}
+
+std::ostream& operator<<(std::ostream& os, Rubik::Orientation const & o);
+
+namespace Rubik
+{
   class Orientation
   {
   private:
@@ -25,6 +32,8 @@ namespace Rubik
     int bottom() const;
     int left() const;
     int right() const;
+
+    friend std::ostream& ::operator<<(std::ostream& os, Rubik::Orientation const & o);
   };
 
   Orientation top(int t);
@@ -70,6 +79,5 @@ namespace Rubik
 }
 
 std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data);
-
 
 #endif
