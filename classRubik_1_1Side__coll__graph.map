@@ -1,4 +1,4 @@
 <map id="Rubik::Side" name="Rubik::Side">
 <area shape="rect" id="node3" title="STL class. " alt="" coords="16,147,125,224"/>
-<area shape="rect" id="node5" href="$classRubik_1_1Orientation.html" title="{Rubik::Orientation\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ top()\l+ bottom()\l+ left()\l+ right()\l}" alt="" coords="161,288,287,512"/>
+<area shape="rect" id="node5" href="$classRubik_1_1Orientation.html" title="{Rubik::Orientation\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ top()\l+ bottom()\l+ left()\l+ right()\l+ transformation()\l}" alt="" coords="161,289,287,527"/>
 </map>
