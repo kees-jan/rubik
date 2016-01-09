@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   2: "ars",
   3: "as",
   4: "abcdehlorst",
-  5: "bdeilrt",
+  5: "bdeilort",
   6: "dp",
   7: "ao",
   8: "derv"
