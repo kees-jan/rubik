@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rubik',['Rubik',['../namespaceRubik.html',1,'']]]
+  ['boost',['boost',['../namespaceboost.html',1,'']]]
 ];
