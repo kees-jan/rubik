@@ -7,13 +7,6 @@
 
 namespace Rubik
 {
-  class Orientation;
-}
-
-std::ostream& operator<<(std::ostream& os, Rubik::Orientation const & o);
-
-namespace Rubik
-{
   class Orientation
   {
   private:
@@ -35,7 +28,7 @@ namespace Rubik
 
     std::array<int, 9> transformation(int top) const;
 
-    friend std::ostream& ::operator<<(std::ostream& os, Rubik::Orientation const & o);
+    friend std::ostream& operator<<(std::ostream& os, Rubik::Orientation const & o);
   };
 
   Orientation top(int t);
@@ -79,20 +72,23 @@ namespace Rubik
      */
     Data data(int top);
   };
+
+  std::ostream& operator<<(std::ostream& os, Side::Data const& data);
+  std::ostream& operator<<(std::ostream& os, Orientation const & o);
 }
 
-std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data);
-
-template<typename T>
-std::ostream& operator<<(std::ostream& os, boost::optional<T> const& v)
+namespace boost
 {
-  if(v)
-    os << *v;
-  else
-    os << '-';
+  template<typename T>
+  std::ostream& operator<<(std::ostream& os, optional<T> const& v)
+  {
+    if(v)
+      os << *v;
+    else
+      os << '-';
   
-  return os;
+    return os;
+  }
 }
-
 
 #endif

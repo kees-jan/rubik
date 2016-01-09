@@ -144,26 +144,27 @@ namespace Rubik
   {
     return transform(orientation_.transformation(top), data_);
   }
-}
 
-std::ostream& operator<<(std::ostream& os, Rubik::Side::Data const& data)
-{
-  os << std::endl
-     << '[' << data[0] << ' ' << data[1] << ' ' << data[2] << ']' << std::endl
-     << '[' << data[3] << ' ' << data[4] << ' ' << data[5] << ']' << std::endl
-     << '[' << data[6] << ' ' << data[7] << ' ' << data[8] << ']' << std::endl;
+  std::ostream& operator<<(std::ostream& os, Side::Data const& data)
+  {
+    os << std::endl
+       << '[' << data[0] << ' ' << data[1] << ' ' << data[2] << ']' << std::endl
+       << '[' << data[3] << ' ' << data[4] << ' ' << data[5] << ']' << std::endl
+       << '[' << data[6] << ' ' << data[7] << ' ' << data[8] << ']' << std::endl;
     
-  return os;
+    return os;
+  }
+
+  std::ostream& operator<<(std::ostream& os, Orientation const& o)
+  {
+    os << '('
+       << "Top: " << o.top_ << ", "
+       << "Left: " << o.left_ << ", "
+       << "Bottom: " << o.bottom_ << ", "
+       << "Right: " << o.right_
+       << ')';
+
+    return os;
+  }
 }
 
-std::ostream& operator<<(std::ostream& os, Rubik::Orientation const& o)
-{
-  os << '('
-     << "Top: " << o.top_ << ", "
-     << "Left: " << o.left_ << ", "
-     << "Bottom: " << o.bottom_ << ", "
-     << "Right: " << o.right_
-     << ')';
-
-  return os;
-}
