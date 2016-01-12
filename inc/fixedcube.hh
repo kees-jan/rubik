@@ -9,6 +9,14 @@ namespace Rubik
   {
   };
 
+  /**
+   * A cube that cannot be rotated
+   *
+   * This cube never changes orientation. I.e. the center squares of
+   * each of the six sides always stay in the same place.  The only
+   * operations that are supported is rotating each of the six sides a
+   * quarter turn clockwise.
+   */
   class FixedCube
   {
   public:
