@@ -145,6 +145,14 @@ namespace Rubik
     return transform(orientation_.transformation(top), data_);
   }
 
+  std::array<int, 3> Side::topRow(int top)
+  {
+    Side::Data data = this->data(top);
+    std::array<int, 3> result = {data[0], data[1], data[2]};
+
+    return result;
+  }
+
   std::ostream& operator<<(std::ostream& os, Side::Data const& data)
   {
     os << std::endl

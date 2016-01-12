@@ -115,3 +115,9 @@ TEST_P(SidePerspective, Left)
   EXPECT_EQ(data.left, side->data(orientation.left()));
 }
 
+TEST_P(SidePerspective, TopRowLeft)
+{
+  std::array<int, 3> expected = { data.left[0], data.left[1], data.left[2] };
+
+  EXPECT_EQ(expected, side->topRow(orientation.left()));
+}

@@ -71,6 +71,14 @@ namespace Rubik
      * orientation.
      */
     Data data(int top);
+
+    /**
+     * Retrieve the top row, from different perspectives.
+     *
+     * Similar to the data(int) function, this returns the top row,
+     * adjacent to the center square color specified.
+     */
+    std::array<int, 3> topRow(int top);
   };
 
   std::ostream& operator<<(std::ostream& os, Side::Data const& data);
