@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../classRubik_1_1Orientation.html#afe1e6223f1c1e702ead6c61570792c6e',1,'Rubik::Orientation::operator&lt;&lt;()'],['../namespaceRubik.html#a0fa751753e1fcf85c5bd526e6e8217c8',1,'Rubik::operator&lt;&lt;(std::ostream &amp;os, Side::Data const &amp;data)'],['../namespaceRubik.html#a66ca0666de518d0782f1a0ba00a34b17',1,'Rubik::operator&lt;&lt;(std::ostream &amp;os, Orientation const &amp;o)'],['../namespaceboost.html#a78866840e614197e607b76a79cb57d0c',1,'boost::operator&lt;&lt;()']]],
-  ['orientation',['Orientation',['../classRubik_1_1Orientation.html',1,'Rubik']]],
-  ['orientation_5f',['orientation_',['../classRubik_1_1Side.html#a224ad7cab3791640213c7aa1970136e8',1,'Rubik::Side']]]
+  ['left',['left',['../classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80',1,'Rubik::Orientation::left(int l)'],['../classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1',1,'Rubik::Orientation::left() const '],['../namespaceRubik.html#aa5cb303cc22a880de431c5c9232fa54c',1,'Rubik::left()']]],
+  ['left_5f',['left_',['../classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852',1,'Rubik::Orientation']]]
 ];

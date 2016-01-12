@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['handler',['handler',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ae869ccdbf76fd4fcc1439cc4e288630e',1,'Scroom::Utils::Detail::ErrorSignalHandler']]]
+  ['fixedcube',['FixedCube',['../classRubik_1_1FixedCube.html',1,'Rubik']]],
+  ['fixedcube_2ecc',['fixedcube.cc',['../fixedcube_8cc.html',1,'']]],
+  ['fixedcube_2ehh',['fixedcube.hh',['../fixedcube_8hh.html',1,'']]]
 ];

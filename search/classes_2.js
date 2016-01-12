@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['side',['Side',['../classRubik_1_1Side.html',1,'Rubik']]]
+  ['fixedcube',['FixedCube',['../classRubik_1_1FixedCube.html',1,'Rubik']]]
 ];
