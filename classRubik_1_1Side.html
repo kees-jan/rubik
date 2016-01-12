@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8417070e0bf3b1828e69bcc1ec6fbe55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#a8417070e0bf3b1828e69bcc1ec6fbe55">data</a> (int <a class="el" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>)</td></tr>
 <tr class="memdesc:a8417070e0bf3b1828e69bcc1ec6fbe55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve side data from different perspectives.  <a href="#a8417070e0bf3b1828e69bcc1ec6fbe55">More...</a><br/></td></tr>
 <tr class="separator:a8417070e0bf3b1828e69bcc1ec6fbe55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af927a2c37059ec901f71f1e6a74f0981"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#af927a2c37059ec901f71f1e6a74f0981">topRow</a> (int <a class="el" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>)</td></tr>
+<tr class="memdesc:af927a2c37059ec901f71f1e6a74f0981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the top row, from different perspectives.  <a href="#af927a2c37059ec901f71f1e6a74f0981">More...</a><br/></td></tr>
+<tr class="separator:af927a2c37059ec901f71f1e6a74f0981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -322,6 +325,38 @@ cube" by specifying what is the color of the center square of the top neighbouri
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="af927a2c37059ec901f71f1e6a74f0981"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; int, 3 &gt; Rubik::Side::topRow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>top</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the top row, from different perspectives. </p>
+<p>Similar to the <a class="el" href="classRubik_1_1Side.html#a8417070e0bf3b1828e69bcc1ec6fbe55" title="Retrieve side data from different perspectives. ">data(int)</a> function, this returns the top row, adjacent to the center square color specified. </p>
+
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00148">148</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+
+<p>References <a class="el" href="side_8cc_source.html#l00138">data()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a> = this-&gt;<a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>(<a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::array&lt;int, 3&gt; result = {data[0], data[1], data[2]};</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
+<div class="ttc" id="namespaceRubik_html_a2c2dde5401477b6af3f1b6bc22d83683"><div class="ttname"><a href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">Rubik::top</a></div><div class="ttdeci">Orientation top(int t)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00105">side.cc:105</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_a3344efdaeb52c7f3f6dd19c0104d8bee"><div class="ttname"><a href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a></div><div class="ttdeci">std::array&lt; int, 9 &gt; Data</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00051">side.hh:51</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_a584a8b48fa07c7c719ee7a03885e4073"><div class="ttname"><a href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Rubik::Side::data</a></div><div class="ttdeci">Data data()</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00138">side.cc:138</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a0341e37b77fc3b7e4d86c3fab4a48b53"></a>
 <div class="memitem">
@@ -377,7 +412,7 @@ cube" by specifying what is the color of the center square of the top neighbouri
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1Side.html">Side</a></li>
-    <li class="footer">Generated on Sat Jan 9 2016 16:30:54 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Tue Jan 12 2016 18:23:16 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -6,6 +6,7 @@ var classRubik_1_1Side =
     [ "create", "classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505", null ],
     [ "data", "classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073", null ],
     [ "data", "classRubik_1_1Side.html#a8417070e0bf3b1828e69bcc1ec6fbe55", null ],
+    [ "topRow", "classRubik_1_1Side.html#af927a2c37059ec901f71f1e6a74f0981", null ],
     [ "data_", "classRubik_1_1Side.html#a0341e37b77fc3b7e4d86c3fab4a48b53", null ],
     [ "orientation_", "classRubik_1_1Side.html#a224ad7cab3791640213c7aa1970136e8", null ]
 ];
