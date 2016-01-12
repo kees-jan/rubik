@@ -150,10 +150,7 @@ namespace Rubik
 
   Side::Row Side::topRow(int top)
   {
-    Side::Data data = this->data(top);
-    Side::Row result = transform(TopRow, data);
-
-    return result;
+    return transform(TopRow, data(top));
   }
 
   std::ostream& operator<<(std::ostream& os, Side::Data const& data)
