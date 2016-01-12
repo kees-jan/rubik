@@ -6,5 +6,6 @@ var searchData=
   ['rotatehalf',['RotateHalf',['../namespaceanonymous__namespace_02side_8cc_03.html#aadc43cf0511a8f240d6b806d9607559f',1,'anonymous_namespace{side.cc}']]],
   ['rotateleft',['RotateLeft',['../namespaceanonymous__namespace_02side_8cc_03.html#ae348b5ec41c0ae678667e815706b9bf8',1,'anonymous_namespace{side.cc}']]],
   ['rotateright',['RotateRight',['../namespaceanonymous__namespace_02side_8cc_03.html#a328879d830080dcf7a336311dce03d7a',1,'anonymous_namespace{side.cc}']]],
+  ['row',['Row',['../classRubik_1_1Side.html#a5ef291a490b7fa7d12d26a5ad8cf37a3',1,'Rubik::Side']]],
   ['rubik',['Rubik',['../namespaceRubik.html',1,'']]]
 ];

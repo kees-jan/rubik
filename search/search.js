@@ -13,7 +13,7 @@ var indexSectionsWithContent =
   3: "as",
   4: "abcdehlorst",
   5: "bdeilort",
-  6: "dp",
+  6: "dpr",
   7: "ao",
   8: "derv"
 };
