@@ -362,16 +362,11 @@ cube" by specifying what is the color of the center square of the top neighbouri
 
 <p>References <a class="el" href="side_8cc_source.html#l00141">data()</a>, <a class="el" href="side_8cc_source.html#l00039">anonymous_namespace{side.cc}::TopRow</a>, and <a class="el" href="side_8cc_source.html#l00042">anonymous_namespace{side.cc}::transform()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a> = this-&gt;<a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>(<a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="classRubik_1_1Side.html#a5ef291a490b7fa7d12d26a5ad8cf37a3">Side::Row</a> result = <a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#ae059b38912273c9d7b64438b838b83f9">transform</a>(<a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#a84d9de4cc768b24a0bcfdcdadd745e97">TopRow</a>, data);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  }</div>
-<div class="ttc" id="classRubik_1_1Side_html_a5ef291a490b7fa7d12d26a5ad8cf37a3"><div class="ttname"><a href="classRubik_1_1Side.html#a5ef291a490b7fa7d12d26a5ad8cf37a3">Rubik::Side::Row</a></div><div class="ttdeci">std::array&lt; int, 3 &gt; Row</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00052">side.hh:52</a></div></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#ae059b38912273c9d7b64438b838b83f9">transform</a>(<a class="code" href="namespaceanonymous__namespace_02side_8cc_03.html#a84d9de4cc768b24a0bcfdcdadd745e97">TopRow</a>, <a class="code" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>(<a class="code" href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">top</a>));</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
 <div class="ttc" id="namespaceRubik_html_a2c2dde5401477b6af3f1b6bc22d83683"><div class="ttname"><a href="namespaceRubik.html#a2c2dde5401477b6af3f1b6bc22d83683">Rubik::top</a></div><div class="ttdeci">Orientation top(int t)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00108">side.cc:108</a></div></div>
 <div class="ttc" id="namespaceanonymous__namespace_02side_8cc_03_html_ae059b38912273c9d7b64438b838b83f9"><div class="ttname"><a href="namespaceanonymous__namespace_02side_8cc_03.html#ae059b38912273c9d7b64438b838b83f9">anonymous_namespace{side.cc}::transform</a></div><div class="ttdeci">std::array&lt; int, n &gt; transform(std::array&lt; int, n &gt; const &amp;transformation, std::array&lt; int, 9 &gt; const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00042">side.cc:42</a></div></div>
 <div class="ttc" id="namespaceanonymous__namespace_02side_8cc_03_html_a84d9de4cc768b24a0bcfdcdadd745e97"><div class="ttname"><a href="namespaceanonymous__namespace_02side_8cc_03.html#a84d9de4cc768b24a0bcfdcdadd745e97">anonymous_namespace{side.cc}::TopRow</a></div><div class="ttdeci">std::array&lt; int, 3 &gt; TopRow</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00039">side.cc:39</a></div></div>
-<div class="ttc" id="classRubik_1_1Side_html_a3344efdaeb52c7f3f6dd19c0104d8bee"><div class="ttname"><a href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Rubik::Side::Data</a></div><div class="ttdeci">std::array&lt; int, 9 &gt; Data</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00051">side.hh:51</a></div></div>
 <div class="ttc" id="classRubik_1_1Side_html_a584a8b48fa07c7c719ee7a03885e4073"><div class="ttname"><a href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">Rubik::Side::data</a></div><div class="ttdeci">Data data()</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00141">side.cc:141</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -431,7 +426,7 @@ cube" by specifying what is the color of the center square of the top neighbouri
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1Side.html">Side</a></li>
-    <li class="footer">Generated on Tue Jan 12 2016 18:28:26 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Tue Jan 12 2016 18:30:07 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
