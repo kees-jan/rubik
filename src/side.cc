@@ -36,10 +36,13 @@ namespace
       8, 5, 2,
     };
 
-  std::array<int, 9> transform(std::array<int, 9> const& transformation, std::array<int, 9> const& data)
+  std::array<int, 3> TopRow = {0, 1, 2};
+
+  template<unsigned long n>
+  std::array<int, n> transform(std::array<int, n> const& transformation, std::array<int, 9> const& data)
   {
-    std::array<int, 9> result;
-    for(int i=0; i<9; i++)
+    std::array<int, n> result;
+    for(int i=0; i<n; i++)
       result[i] = data[transformation[i]];
     return result;
   }
@@ -148,7 +151,7 @@ namespace Rubik
   Side::Row Side::topRow(int top)
   {
     Side::Data data = this->data(top);
-    Side::Row result = {data[0], data[1], data[2]};
+    Side::Row result = transform(TopRow, data);
 
     return result;
   }
