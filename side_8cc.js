@@ -6,9 +6,10 @@ var side_8cc =
     [ "operator<<", "side_8cc.html#a66ca0666de518d0782f1a0ba00a34b17", null ],
     [ "right", "side_8cc.html#a02324002cefec24f006baf371b343612", null ],
     [ "top", "side_8cc.html#a2c2dde5401477b6af3f1b6bc22d83683", null ],
-    [ "transform", "side_8cc.html#a04e19bcd412b1f63b0aa50338c4099ae", null ],
+    [ "transform", "side_8cc.html#ae059b38912273c9d7b64438b838b83f9", null ],
     [ "Identity", "side_8cc.html#a24781c77e0dbc104260251e5738a2260", null ],
     [ "RotateHalf", "side_8cc.html#aadc43cf0511a8f240d6b806d9607559f", null ],
     [ "RotateLeft", "side_8cc.html#ae348b5ec41c0ae678667e815706b9bf8", null ],
-    [ "RotateRight", "side_8cc.html#a328879d830080dcf7a336311dce03d7a", null ]
+    [ "RotateRight", "side_8cc.html#a328879d830080dcf7a336311dce03d7a", null ],
+    [ "TopRow", "side_8cc.html#a84d9de4cc768b24a0bcfdcdadd745e97", null ]
 ];
