@@ -49,6 +49,7 @@ namespace Rubik
   public:
     typedef boost::shared_ptr<Side> Ptr;
     typedef std::array<int,9> Data;
+    typedef std::array<int,3> Row;
 
   private:
     Data data_;
@@ -78,7 +79,7 @@ namespace Rubik
      * Similar to the data(int) function, this returns the top row,
      * adjacent to the center square color specified.
      */
-    std::array<int, 3> topRow(int top);
+    Row topRow(int top);
   };
 
   std::ostream& operator<<(std::ostream& os, Side::Data const& data);
