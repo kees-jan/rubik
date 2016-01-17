@@ -3,11 +3,36 @@
 
 #include <boost/shared_ptr.hpp>
 
+#include <side.hh>
+
 namespace Rubik
 {
   class CubeData
   {
+  private:
+    boost::optional<Side::Data> top_;
+    boost::optional<Side::Data> bottom_;
+    boost::optional<Side::Data> left_;
+    boost::optional<Side::Data> right_;
+    boost::optional<Side::Data> front_;
+    boost::optional<Side::Data> back_;
+
+  public:
+    CubeData& top(Side::Data const& data);
+    CubeData& bottom(Side::Data const& data);
+    CubeData& left(Side::Data const& data);
+    CubeData& right(Side::Data const& data);
+    CubeData& front(Side::Data const& data);
+    CubeData& back(Side::Data const& data);
+
   };
+
+  CubeData top(Side::Data const& data);
+  CubeData bottom(Side::Data const& data);
+  CubeData left(Side::Data const& data);
+  CubeData right(Side::Data const& data);
+  CubeData front(Side::Data const& data);
+  CubeData back(Side::Data const& data);
 
   /**
    * A cube that cannot be rotated
