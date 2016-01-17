@@ -25,6 +25,7 @@ namespace Rubik
     CubeData& front(Side::Data const& data);
     CubeData& back(Side::Data const& data);
 
+    bool operator==(CubeData const& other) const;
   };
 
   CubeData top(Side::Data const& data);
@@ -47,8 +48,16 @@ namespace Rubik
   public:
     typedef boost::shared_ptr<FixedCube> Ptr;
 
+  private:
+    CubeData data_;
+    
+  private:
+    FixedCube(CubeData const& data);
+    
   public:
     static Ptr create(CubeData const& data);
+
+    CubeData data();
   };
 }
 

@@ -42,5 +42,5 @@ TEST_F(FixedCubeTests, Initialize)
   
   FixedCube::Ptr cube = FixedCube::create(data);
 
-  // EXPECT_EQ(data, cube->data());
+  EXPECT_EQ(data, cube->data());
 }

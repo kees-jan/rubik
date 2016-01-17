@@ -73,9 +73,30 @@ namespace Rubik
     back_ = data;
     return *this;
   }
-  
-  FixedCube::Ptr FixedCube::create(CubeData const&)
+
+  bool CubeData::operator==(CubeData const& other) const
   {
-    return Ptr();
+    return
+      top_ == other.top_ &&
+      front_ == other.front_ &&
+      left_ == other.left_ &&
+      right_ == other.right_ &&
+      bottom_ == other.bottom_ &&
+      back_ == other.back_;
+  }
+
+  FixedCube::FixedCube(CubeData const& data)
+    : data_(data)
+  {
+  }
+  
+  FixedCube::Ptr FixedCube::create(CubeData const& data)
+  {
+    return Ptr(new FixedCube(data));
+  }
+
+  CubeData FixedCube::data()
+  {
+    return data_;
   }
 }
