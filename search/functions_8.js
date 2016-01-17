@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['right',['../classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b',1,'Rubik::Orientation::right(int r)'],['../classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74',1,'Rubik::Orientation::right() const '],['../namespaceRubik.html#a02324002cefec24f006baf371b343612',1,'Rubik::right()']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../namespaceRubik.html#a0fa751753e1fcf85c5bd526e6e8217c8',1,'Rubik::operator&lt;&lt;(std::ostream &amp;os, Side::Data const &amp;data)'],['../namespaceRubik.html#a66ca0666de518d0782f1a0ba00a34b17',1,'Rubik::operator&lt;&lt;(std::ostream &amp;os, Orientation const &amp;o)'],['../namespaceboost.html#a78866840e614197e607b76a79cb57d0c',1,'boost::operator&lt;&lt;()']]]
 ];

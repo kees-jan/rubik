@@ -1,3 +1,5 @@
 <map id="inc/side.hh" name="inc/side.hh">
-<area shape="rect" id="node2" href="$side_8cc.html" title="src/side.cc" alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node2" href="$fixedcube_8hh.html" title="inc/fixedcube.hh" alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node4" href="$side_8cc.html" title="src/side.cc" alt="" coords="147,80,233,107"/>
+<area shape="rect" id="node3" href="$fixedcube_8cc.html" title="src/fixedcube.cc" alt="" coords="5,155,123,181"/>
 </map>

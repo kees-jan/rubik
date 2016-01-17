@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handler',['handler',['../classScroom_1_1Utils_1_1Detail_1_1ErrorSignalHandler.html#ae869ccdbf76fd4fcc1439cc4e288630e',1,'Scroom::Utils::Detail::ErrorSignalHandler']]]
+  ['front',['front',['../classRubik_1_1CubeData.html#aa663887fc80f1886247d1b366a46eaac',1,'Rubik::CubeData::front()'],['../namespaceRubik.html#aa4351fe93a8118fd9cb30d2538d2499e',1,'Rubik::front()']]]
 ];

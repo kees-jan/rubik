@@ -11,8 +11,8 @@ var indexSectionsWithContent =
   1: "cefos",
   2: "abrs",
   3: "afs",
-  4: "abcdehlorst",
-  5: "bdeilort",
+  4: "abcdefhlorst",
+  5: "bdefilort",
   6: "dpr",
   7: "ao",
   8: "derv"
