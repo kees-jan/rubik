@@ -4,6 +4,7 @@ var classRubik_1_1CubeData =
     [ "bottom", "classRubik_1_1CubeData.html#ad855bce59d1453d5088b78cd26a1af49", null ],
     [ "front", "classRubik_1_1CubeData.html#aa663887fc80f1886247d1b366a46eaac", null ],
     [ "left", "classRubik_1_1CubeData.html#ab93de76924736bd4fcaf07e0b0b739d1", null ],
+    [ "operator==", "classRubik_1_1CubeData.html#a74bce1b8eedb6752b39f1434f5c37c37", null ],
     [ "right", "classRubik_1_1CubeData.html#a5a9669704d9201544a01cf7968d4c38c", null ],
     [ "top", "classRubik_1_1CubeData.html#a9b373a550b42975d8660d63326e3185c", null ],
     [ "back_", "classRubik_1_1CubeData.html#ac4005d58b54b1bed040fe613113d055d", null ],
