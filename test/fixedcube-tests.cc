@@ -10,8 +10,27 @@ class FixedCubeTests : public testing::Test
 {
 private:
   static int n;
+
+public:
+  CubeData data;
   
 public:
+  FixedCubeTests()
+    : data(top(generateSideData()).
+           left(generateSideData()).
+           front(generateSideData()).
+           right(generateSideData()).
+           bottom(generateSideData()).
+           back(generateSideData()))
+  {
+  }
+
+  ~FixedCubeTests()
+  {
+    // Keep square values relatively small
+    n=0;
+  }
+  
   int generateInteger()
   {
     return n++;
@@ -31,14 +50,13 @@ int FixedCubeTests::n = 0;
 
 TEST_F(FixedCubeTests, Initialize)
 {
-  CubeData data =
-    top(generateSideData()).
-    left(generateSideData()).
-    front(generateSideData()).
-    right(generateSideData()).
-    bottom(generateSideData()).
-    back(generateSideData());
-  
+  FixedCube::Ptr cube = FixedCube::create(data);
+
+  EXPECT_EQ(data, cube->data());
+}
+
+TEST_F(FixedCubeTests, InitializeWithFactory)
+{
   FixedCube::Ptr cube = FixedCube::create(data);
 
   EXPECT_EQ(data, cube->data());
