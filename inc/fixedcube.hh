@@ -26,6 +26,10 @@ namespace Rubik
     CubeData& back(Side::Data const& data);
 
     bool operator==(CubeData const& other) const;
+
+    int largestValue() const;
+
+    friend std::ostream& operator<<(std::ostream& os, CubeData const& data);
   };
 
   CubeData top(Side::Data const& data);
@@ -59,6 +63,8 @@ namespace Rubik
 
     CubeData data();
   };
+
+  std::ostream& operator<<(std::ostream& os, CubeData const& data);
 }
 
 #endif
