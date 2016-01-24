@@ -1,3 +1,3 @@
 <map id="Rubik::FixedCube" name="Rubik::FixedCube">
-<area shape="rect" id="node2" href="$classRubik_1_1CubeData.html" title="{Rubik::CubeData\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l&#45; front_\l&#45; back_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ front()\l+ back()\l+ operator==()\l}" alt="" coords="7,6,129,245"/>
+<area shape="rect" id="node2" href="$classRubik_1_1CubeData.html" title="{Rubik::CubeData\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l&#45; front_\l&#45; back_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ front()\l+ back()\l+ operator==()\l+ largestValue()\l}" alt="" coords="7,5,129,259"/>
 </map>
