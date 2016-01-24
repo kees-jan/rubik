@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['orientation',['Orientation',['../classRubik_1_1Orientation.html',1,'Rubik']]]
+  ['iside',['ISide',['../classRubik_1_1ISide.html',1,'Rubik']]]
 ];
