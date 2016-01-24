@@ -193,6 +193,11 @@ namespace Rubik
     return Ptr(new FixedCube(data));
   }
 
+  FixedCube:: Ptr FixedCube::create(CubeData const&, boost::function<ISide::Ptr(Side::Data)>)
+  {
+    return Ptr();
+  }
+
   CubeData FixedCube::data()
   {
     return data_;

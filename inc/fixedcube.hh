@@ -2,6 +2,7 @@
 #define FIXEDCUBE_HH
 
 #include <boost/shared_ptr.hpp>
+#include <boost/function.hpp>
 
 #include <side.hh>
 
@@ -60,6 +61,7 @@ namespace Rubik
     
   public:
     static Ptr create(CubeData const& data);
+    static Ptr create(CubeData const& data, boost::function<ISide::Ptr(Side::Data)> sideFactory);
 
     CubeData data();
   };

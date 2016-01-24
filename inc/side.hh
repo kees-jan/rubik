@@ -35,6 +35,18 @@ namespace Rubik
   Orientation bottom(int b);
   Orientation left(int l);
   Orientation right(int r);
+
+  /**
+   * Represents one side of a cube.
+   *
+   * This is an abstract class representing one side of a
+   * cube. Concrete implementations should inherit from it.
+   */
+  class ISide
+  {
+  public:
+    typedef boost::shared_ptr<ISide> Ptr;
+  };
   
   /**
    * Represents one side of a cube.
