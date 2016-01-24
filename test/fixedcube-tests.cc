@@ -22,7 +22,6 @@ public:
     Side::Data result;
     for(unsigned int i=0; i<result.size(); i++)
       result[i] = generateInteger();
-    n+=9;
 
     return result;
   }

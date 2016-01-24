@@ -1,0 +1,1 @@
+make -k -j -C ~/src/rubik && LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:~/src/rubik/_lib ~/src/rubik/test/_bin/main
