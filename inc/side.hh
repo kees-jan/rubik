@@ -88,6 +88,8 @@ namespace Rubik
 
 namespace boost
 {
+  using Rubik::operator<<;
+  
   template<typename T>
   std::ostream& operator<<(std::ostream& os, optional<T> const& v)
   {
