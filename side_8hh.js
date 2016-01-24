@@ -2,7 +2,6 @@ var side_8hh =
 [
     [ "Orientation", "classRubik_1_1Orientation.html", "classRubik_1_1Orientation" ],
     [ "Side", "classRubik_1_1Side.html", "classRubik_1_1Side" ],
-    [ "Data", "classRubik_1_1Side_1_1Data.html", "classRubik_1_1Side_1_1Data" ],
     [ "bottom", "side_8hh.html#a0259554d5f463044bfb34be0fbbcaf79", null ],
     [ "left", "side_8hh.html#aa5cb303cc22a880de431c5c9232fa54c", null ],
     [ "operator<<", "side_8hh.html#a0fa751753e1fcf85c5bd526e6e8217c8", null ],
