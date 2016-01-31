@@ -114,6 +114,16 @@ namespace Rubik
       right_ == other.right_;
   }
 
+  bool Orientation::operator<(Orientation const& other) const
+  {
+    return toArray() < other.toArray();
+  }
+
+  std::array<boost::optional<int>, 4> Orientation::toArray() const
+  {
+    return { top_, right_, bottom_, left_ };
+  }
+
   Orientation top(int t)
   {
     Orientation o;

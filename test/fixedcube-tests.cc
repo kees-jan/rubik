@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
 
+#include <boost/assign.hpp>
+
 #include <fixedcube.hh>
 #include <side.hh>
-
 
 using namespace Rubik;
 
@@ -11,33 +12,39 @@ class FixedCubeTests;
 class SideFactory
 {
 private:
-  CubeData cubeData;
-  int numberOfCalls_;
+  typedef std::pair<Orientation, Side::Data> ExpectedInvocation;
+  typedef std::set<ExpectedInvocation> ExpectedInvocations;
+  
+private:
+  ExpectedInvocations expectedInvocations;
+  size_t originalInvocationCount;
   
 public:
   SideFactory(CubeData const& cubeData)
-    : cubeData(cubeData), numberOfCalls_(0)
+    : expectedInvocations(expectedInvocationsFromCubeData(cubeData)), originalInvocationCount(expectedInvocations.size())
   {}
 
   ~SideFactory()
   {
-    if(numberOfCalls())
-      EXPECT_EQ(6, numberOfCalls());
+    if(originalInvocationCount != expectedInvocations.size())
+      EXPECT_TRUE(expectedInvocations.empty());
   }
   
   ISide::Ptr operator()(Side::Data const& data, Orientation const& orientation)
   {
-    EXPECT_EQ(cubeData.top(), data);
-    EXPECT_EQ(Orientation(), orientation);
-    numberOfCalls_++;
+    ExpectedInvocation invocation(orientation, data);
+    EXPECT_TRUE(expectedInvocations.count(invocation));
+    // expectedInvocations.erase(invocation);
     return ISide::Ptr();
   }
 
-  int numberOfCalls()
-  {
-    return numberOfCalls_;
-  }
+  static ExpectedInvocations expectedInvocationsFromCubeData(CubeData const& cubeData);
 };
+
+SideFactory::ExpectedInvocations SideFactory::expectedInvocationsFromCubeData(CubeData const& cubeData)
+{
+  return boost::assign::list_of(make_pair(Orientation(), cubeData.top()));
+}
 
 class FixedCubeTests : public testing::Test
 {

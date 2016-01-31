@@ -28,8 +28,12 @@ namespace Rubik
 
     std::array<int, 9> transformation(int top) const;
     bool operator==(Orientation const& other) const;
+    bool operator<(Orientation const& other) const;
 
     friend std::ostream& operator<<(std::ostream& os, Rubik::Orientation const & o);
+
+  private:
+    std::array<boost::optional<int>, 4> toArray() const;
   };
 
   Orientation top(int t);
