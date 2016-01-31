@@ -1,5 +1,5 @@
 <map id="Rubik::Side" name="Rubik::Side">
-<area shape="rect" id="node2" href="$classRubik_1_1ISide.html" title="Represents one side of a cube. " alt="" coords="5,376,99,453"/>
+<area shape="rect" id="node2" href="$classRubik_1_1ISide.html" title="Represents one side of a cube. " alt="" coords="5,391,99,468"/>
 <area shape="rect" id="node4" title="STL class. " alt="" coords="135,147,244,224"/>
-<area shape="rect" id="node6" href="$classRubik_1_1Orientation.html" title="{Rubik::Orientation\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ top()\l+ bottom()\l+ left()\l+ right()\l+ transformation()\l+ operator==()\l}" alt="" coords="279,288,405,541"/>
+<area shape="rect" id="node6" href="$classRubik_1_1Orientation.html" title="{Rubik::Orientation\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ top()\l+ bottom()\l+ left()\l+ right()\l+ transformation()\l+ operator==()\l+ operator\&lt;()\l&#45; toArray()\l}" alt="" coords="279,288,405,571"/>
 </map>
