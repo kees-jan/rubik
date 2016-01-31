@@ -26,6 +26,13 @@ namespace Rubik
     CubeData& front(Side::Data const& data);
     CubeData& back(Side::Data const& data);
 
+    Side::Data top() const;
+    Side::Data bottom() const;
+    Side::Data left() const;
+    Side::Data right() const;
+    Side::Data front() const;
+    Side::Data back() const;
+
     bool operator==(CubeData const& other) const;
 
     int largestValue() const;

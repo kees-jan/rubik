@@ -159,6 +159,37 @@ namespace Rubik
     return *this;
   }
 
+  Side::Data CubeData::top() const
+  {
+    return *top_;
+  }
+  
+  Side::Data CubeData::bottom() const
+  {
+    return *bottom_;
+  }
+  
+  Side::Data CubeData::left() const
+  {
+    return *left_;
+  }
+  
+  Side::Data CubeData::right() const
+  {
+    return *right_;
+  }
+  
+  Side::Data CubeData::front() const
+  {
+    return *front_;
+  }
+  
+  Side::Data CubeData::back() const
+  {
+    return *back_;
+  }
+  
+
   bool CubeData::operator==(CubeData const& other) const
   {
     return
@@ -183,9 +214,11 @@ namespace Rubik
     return max;
   }
 
-  FixedCube::FixedCube(CubeData const& data, SideFactory const&)
+  FixedCube::FixedCube(CubeData const& data, SideFactory const& sideFactory)
     : data_(data)
   {
+    for(int i=0; i<6; i++)
+      sideFactory(data.top(), Orientation());
   }
   
   FixedCube::Ptr FixedCube::create(CubeData const& data)
