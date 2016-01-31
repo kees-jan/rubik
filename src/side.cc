@@ -105,6 +105,15 @@ namespace Rubik
     return transformations.at(top);
   }
 
+  bool Orientation::operator==(Orientation const& other) const
+  {
+    return
+      top_ == other.top_ &&
+      left_ == other.left_ &&
+      bottom_ == other.bottom_ &&
+      right_ == other.right_;
+  }
+
   Orientation top(int t)
   {
     Orientation o;

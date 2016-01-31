@@ -11,11 +11,12 @@ class FixedCubeTests;
 class SideFactory
 {
 private:
+  CubeData cubeData;
   int numberOfCalls_;
   
 public:
-  SideFactory()
-    : numberOfCalls_(0)
+  SideFactory(CubeData const& cubeData)
+    : cubeData(cubeData), numberOfCalls_(0)
   {}
 
   ~SideFactory()
@@ -24,8 +25,10 @@ public:
       EXPECT_EQ(6, numberOfCalls());
   }
   
-  ISide::Ptr operator()(Side::Data const&, Orientation const&)
+  ISide::Ptr operator()(Side::Data const& data, Orientation const& orientation)
   {
+    EXPECT_EQ(cubeData.top(), data);
+    EXPECT_EQ(Orientation(), orientation);
     numberOfCalls_++;
     return ISide::Ptr();
   }
@@ -94,8 +97,8 @@ TEST_F(FixedCubeTests, InitializeWithFactory)
 
 TEST_F(FixedCubeTests, InitializeWithMockFactory)
 {
-  SideFactory sideFactory;
-  FixedCube::Ptr cube = FixedCube::create(data, SideFactory());
+  SideFactory sideFactory(data);
+  FixedCube::Ptr cube = FixedCube::create(data, sideFactory);
 
   EXPECT_EQ(data, cube->data());
 }
