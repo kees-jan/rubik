@@ -69,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -141,8 +142,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a994de232df649945bde91fdcb8a8558f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a994de232df649945bde91fdcb8a8558f">create</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>)</td></tr>
 <tr class="separator:a994de232df649945bde91fdcb8a8558f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8501f2243aa4203bc8e996aafb36fe7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a8501f2243aa4203bc8e996aafb36fe7c">create</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, boost::function&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a>)&gt; sideFactory)</td></tr>
-<tr class="separator:a8501f2243aa4203bc8e996aafb36fe7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43039618b3763459ee214738b3c7a207"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a43039618b3763459ee214738b3c7a207">create</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, boost::function&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const &amp;, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;)&gt; sideFactory)</td></tr>
+<tr class="separator:a43039618b3763459ee214738b3c7a207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -241,7 +242,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a8501f2243aa4203bc8e996aafb36fe7c"></a>
+<a class="anchor" id="a43039618b3763459ee214738b3c7a207"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -257,7 +258,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::function&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a>)&gt;&#160;</td>
+          <td class="paramtype">boost::function&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const &amp;, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;)&gt;&#160;</td>
           <td class="paramname"><em>sideFactory</em>&#160;</td>
         </tr>
         <tr>
@@ -337,7 +338,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1FixedCube.html">FixedCube</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 16:47:55 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Sun Jan 31 2016 12:43:21 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

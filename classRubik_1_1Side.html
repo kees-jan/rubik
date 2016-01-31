@@ -69,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -118,11 +119,18 @@ $(document).ready(function(){initNavTree('classRubik_1_1Side.html','');});
 
 <p><code>#include &lt;<a class="el" href="side_8hh_source.html">side.hh</a>&gt;</code></p>
 <div class="dynheader">
+Inheritance diagram for Rubik::Side:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRubik_1_1Side__inherit__graph.png" border="0" usemap="#Rubik_1_1Side_inherit__map" alt="Inheritance graph"/></div>
+<map name="Rubik_1_1Side_inherit__map" id="Rubik_1_1Side_inherit__map">
+<area shape="rect" id="node2" href="classRubik_1_1ISide.html" title="Represents one side of a cube. " alt="" coords="6,5,100,83"/></map>
+</div>
+<div class="dynheader">
 Collaboration diagram for Rubik::Side:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRubik_1_1Side__coll__graph.png" border="0" usemap="#Rubik_1_1Side_coll__map" alt="Collaboration graph"/></div>
 <map name="Rubik_1_1Side_coll__map" id="Rubik_1_1Side_coll__map">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="16,147,125,224"/><area shape="rect" id="node5" href="classRubik_1_1Orientation.html" title="{Rubik::Orientation\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ top()\l+ bottom()\l+ left()\l+ right()\l+ transformation()\l}" alt="" coords="161,289,287,527"/></map>
+<area shape="rect" id="node2" href="classRubik_1_1ISide.html" title="Represents one side of a cube. " alt="" coords="5,369,99,447"/><area shape="rect" id="node4" title="STL class. " alt="" coords="135,147,244,224"/><area shape="rect" id="node6" href="classRubik_1_1Orientation.html" title="{Rubik::Orientation\n|&#45; top_\l&#45; bottom_\l&#45; left_\l&#45; right_\l|+ top()\l+ bottom()\l+ left()\l+ right()\l+ top()\l+ bottom()\l+ left()\l+ right()\l+ transformation()\l}" alt="" coords="279,289,405,527"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -133,6 +141,9 @@ Public Types</h2></td></tr>
 <tr class="separator:a3344efdaeb52c7f3f6dd19c0104d8bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef291a490b7fa7d12d26a5ad8cf37a3"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; int, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#a5ef291a490b7fa7d12d26a5ad8cf37a3">Row</a></td></tr>
 <tr class="separator:a5ef291a490b7fa7d12d26a5ad8cf37a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classRubik_1_1ISide"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classRubik_1_1ISide')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classRubik_1_1ISide.html">Rubik::ISide</a></td></tr>
+<tr class="memitem:a8e042a65aefc208e695635e5b63dbca9 inherit pub_types_classRubik_1_1ISide"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classRubik_1_1ISide.html">ISide</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">Ptr</a></td></tr>
+<tr class="separator:a8e042a65aefc208e695635e5b63dbca9 inherit pub_types_classRubik_1_1ISide"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -149,7 +160,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:accbe0c7bc5b82b06cae6ba536c4a4505"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1Side.html#a73be46545ed2b5c8f4b21dd150c9ea66">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">create</a> (<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Data</a> const &amp;<a class="el" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;orientation)</td></tr>
+<tr class="memitem:accbe0c7bc5b82b06cae6ba536c4a4505"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">create</a> (<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Data</a> const &amp;<a class="el" href="classRubik_1_1Side.html#a584a8b48fa07c7c719ee7a03885e4073">data</a>, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;orientation)</td></tr>
 <tr class="separator:accbe0c7bc5b82b06cae6ba536c4a4505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -426,7 +437,7 @@ cube" by specifying what is the color of the center square of the top neighbouri
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1Side.html">Side</a></li>
-    <li class="footer">Generated on Sun Jan 24 2016 16:47:55 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Sun Jan 31 2016 12:43:21 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
