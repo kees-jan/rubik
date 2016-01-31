@@ -183,19 +183,19 @@ namespace Rubik
     return max;
   }
 
-  FixedCube::FixedCube(CubeData const& data)
+  FixedCube::FixedCube(CubeData const& data, SideFactory const&)
     : data_(data)
   {
   }
   
   FixedCube::Ptr FixedCube::create(CubeData const& data)
   {
-    return Ptr(new FixedCube(data));
+    return Ptr(new FixedCube(data, Side::create));
   }
 
-  FixedCube:: Ptr FixedCube::create(CubeData const&, boost::function<ISide::Ptr(Side::Data const&, Orientation const&)>)
+  FixedCube::Ptr FixedCube::create(CubeData const& data, SideFactory const& sideFactory)
   {
-    return Ptr();
+    return Ptr(new FixedCube(data, sideFactory));
   }
 
   CubeData FixedCube::data()

@@ -52,16 +52,16 @@ namespace Rubik
   {
   public:
     typedef boost::shared_ptr<FixedCube> Ptr;
-
+    typedef boost::function<ISide::Ptr(Side::Data const&, Orientation const&)> SideFactory;
   private:
     CubeData data_;
     
   private:
-    FixedCube(CubeData const& data);
+    FixedCube(CubeData const& data, SideFactory const& sideFactory);
     
   public:
     static Ptr create(CubeData const& data);
-    static Ptr create(CubeData const& data, boost::function<ISide::Ptr(Side::Data const&, Orientation const&)> sideFactory);
+    static Ptr create(CubeData const& data, SideFactory const& sideFactory);
 
     CubeData data();
   };

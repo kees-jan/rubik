@@ -70,12 +70,12 @@ TEST_F(FixedCubeTests, InitializeWithFactory)
 {
   FixedCube::Ptr cube = FixedCube::create(data, Side::create);
 
-  // EXPECT_EQ(data, cube->data());
+  EXPECT_EQ(data, cube->data());
 }
 
 TEST_F(FixedCubeTests, InitializeWithMockFactory)
 {
   FixedCube::Ptr cube = FixedCube::create(data, SideFactory());
 
-  // EXPECT_EQ(data, cube->data());
+  EXPECT_EQ(data, cube->data());
 }
