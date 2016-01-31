@@ -56,7 +56,7 @@ namespace Rubik
    * relative to the color of the center square of their adjacent
    * sides.
    */
-  class Side
+  class Side : public ISide
   {
   public:
     typedef boost::shared_ptr<Side> Ptr;

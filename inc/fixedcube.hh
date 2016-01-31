@@ -61,7 +61,7 @@ namespace Rubik
     
   public:
     static Ptr create(CubeData const& data);
-    static Ptr create(CubeData const& data, boost::function<ISide::Ptr(Side::Data)> sideFactory);
+    static Ptr create(CubeData const& data, boost::function<ISide::Ptr(Side::Data const&, Orientation const&)> sideFactory);
 
     CubeData data();
   };

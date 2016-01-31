@@ -11,7 +11,7 @@ class FixedCubeTests;
 class SideFactory
 {
 public:
-  ISide::Ptr operator()(Side::Data const&)
+  ISide::Ptr operator()(Side::Data const&, Orientation const&)
   {
     return ISide::Ptr();
   }
@@ -67,6 +67,13 @@ TEST_F(FixedCubeTests, Initialize)
 }
 
 TEST_F(FixedCubeTests, InitializeWithFactory)
+{
+  FixedCube::Ptr cube = FixedCube::create(data, Side::create);
+
+  // EXPECT_EQ(data, cube->data());
+}
+
+TEST_F(FixedCubeTests, InitializeWithMockFactory)
 {
   FixedCube::Ptr cube = FixedCube::create(data, SideFactory());
 
