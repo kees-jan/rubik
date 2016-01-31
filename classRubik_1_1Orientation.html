@@ -142,6 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a705462fc2f4bebcfb8fd40efb46e2d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affee6b50206def9062db6f75d6013c50"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 9 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Orientation.html#affee6b50206def9062db6f75d6013c50">transformation</a> (int <a class="el" href="classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380">top</a>) const </td></tr>
 <tr class="separator:affee6b50206def9062db6f75d6013c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5896cad05d39ebae771b3c8f0eab4483"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1Orientation.html#a5896cad05d39ebae771b3c8f0eab4483">operator==</a> (<a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;other) const </td></tr>
+<tr class="separator:a5896cad05d39ebae771b3c8f0eab4483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -256,6 +258,37 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">left_</a>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
 <div class="ttc" id="classRubik_1_1Orientation_html_a555e3b17470ed87d48784f084e9cf852"><div class="ttname"><a href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">Rubik::Orientation::left_</a></div><div class="ttdeci">boost::optional&lt; int &gt; left_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00015">side.hh:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5896cad05d39ebae771b3c8f0eab4483"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Rubik::Orientation::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00108">108</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+
+<p>References <a class="el" href="side_8hh_source.html#l00014">bottom_</a>, <a class="el" href="side_8hh_source.html#l00015">left_</a>, <a class="el" href="side_8hh_source.html#l00016">right_</a>, and <a class="el" href="side_8hh_source.html#l00013">top_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">top_</a> == other.top_ &amp;&amp;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">left_</a> == other.left_ &amp;&amp;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <a class="code" href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">bottom_</a> == other.bottom_ &amp;&amp;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <a class="code" href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">right_</a> == other.right_;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a26b0612bf4f8f29514470272c8109790"><div class="ttname"><a href="classRubik_1_1Orientation.html#a26b0612bf4f8f29514470272c8109790">Rubik::Orientation::bottom_</a></div><div class="ttdeci">boost::optional&lt; int &gt; bottom_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00014">side.hh:14</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a555e3b17470ed87d48784f084e9cf852"><div class="ttname"><a href="classRubik_1_1Orientation.html#a555e3b17470ed87d48784f084e9cf852">Rubik::Orientation::left_</a></div><div class="ttdeci">boost::optional&lt; int &gt; left_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00015">side.hh:15</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a2be5a5d4bf2f82a932178178afe5c631"><div class="ttname"><a href="classRubik_1_1Orientation.html#a2be5a5d4bf2f82a932178178afe5c631">Rubik::Orientation::right_</a></div><div class="ttdeci">boost::optional&lt; int &gt; right_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00016">side.hh:16</a></div></div>
+<div class="ttc" id="classRubik_1_1Orientation_html_a0f3e8c47d78c49cb2ad9ca53fff1ecd3"><div class="ttname"><a href="classRubik_1_1Orientation.html#a0f3e8c47d78c49cb2ad9ca53fff1ecd3">Rubik::Orientation::top_</a></div><div class="ttdeci">boost::optional&lt; int &gt; top_</div><div class="ttdef"><b>Definition:</b> <a href="side_8hh_source.html#l00013">side.hh:13</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,17 +458,17 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="side_8cc_source.html#l00166">166</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    os &lt;&lt; <span class="charliteral">&#39;(&#39;</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Top: &quot;</span> &lt;&lt; o.top_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Left: &quot;</span> &lt;&lt; o.left_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Bottom: &quot;</span> &lt;&lt; o.bottom_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Right: &quot;</span> &lt;&lt; o.right_</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;       &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="side_8cc_source.html#l00175">175</a> of file <a class="el" href="side_8cc_source.html">side.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    os &lt;&lt; <span class="charliteral">&#39;(&#39;</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Top: &quot;</span> &lt;&lt; o.top_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Left: &quot;</span> &lt;&lt; o.left_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Bottom: &quot;</span> &lt;&lt; o.bottom_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;Right: &quot;</span> &lt;&lt; o.right_</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;       &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -538,7 +571,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1Orientation.html">Orientation</a></li>
-    <li class="footer">Generated on Sun Jan 31 2016 13:04:57 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Sun Jan 31 2016 13:59:29 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

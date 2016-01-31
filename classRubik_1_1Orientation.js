@@ -4,6 +4,7 @@ var classRubik_1_1Orientation =
     [ "bottom", "classRubik_1_1Orientation.html#a929cd5e546eefbcbfe1c24a843fa039d", null ],
     [ "left", "classRubik_1_1Orientation.html#ac12b7896a18f4d0ff2b7192cb5999e80", null ],
     [ "left", "classRubik_1_1Orientation.html#ae1dfeef708cccc0b0748a00d0da691a1", null ],
+    [ "operator==", "classRubik_1_1Orientation.html#a5896cad05d39ebae771b3c8f0eab4483", null ],
     [ "right", "classRubik_1_1Orientation.html#af76e8e06c0fb07be75431e5730a11d7b", null ],
     [ "right", "classRubik_1_1Orientation.html#a705462fc2f4bebcfb8fd40efb46e2d74", null ],
     [ "top", "classRubik_1_1Orientation.html#aac148ddc336d3f1c2de5fdd26cf66380", null ],
