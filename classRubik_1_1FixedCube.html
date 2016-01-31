@@ -132,6 +132,10 @@ Public Types</h2></td></tr>
 <tr class="memitem:a4f11f9fc498c680f16534e83dfd0efe6"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classRubik_1_1FixedCube.html">FixedCube</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a></td></tr>
 <tr class="separator:a4f11f9fc498c680f16534e83dfd0efe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb94330ddb476b8532747ff2cfdda17"><td class="memItemLeft" align="right" valign="top">typedef boost::function<br class="typebreak"/>
+&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const <br class="typebreak"/>
+&amp;, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17">SideFactory</a></td></tr>
+<tr class="separator:aaeb94330ddb476b8532747ff2cfdda17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -142,13 +146,13 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a994de232df649945bde91fdcb8a8558f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a994de232df649945bde91fdcb8a8558f">create</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>)</td></tr>
 <tr class="separator:a994de232df649945bde91fdcb8a8558f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43039618b3763459ee214738b3c7a207"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a43039618b3763459ee214738b3c7a207">create</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, boost::function&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const &amp;, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;)&gt; sideFactory)</td></tr>
-<tr class="separator:a43039618b3763459ee214738b3c7a207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce51b252db34e54cc57664dfd56abf9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a1ce51b252db34e54cc57664dfd56abf9">create</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, <a class="el" href="classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17">SideFactory</a> const &amp;sideFactory)</td></tr>
+<tr class="separator:a1ce51b252db34e54cc57664dfd56abf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a70555f970901d74e711628faabac3d50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a70555f970901d74e711628faabac3d50">FixedCube</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>)</td></tr>
-<tr class="separator:a70555f970901d74e711628faabac3d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff6592beaa163bfaf287a8860e9fb3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRubik_1_1FixedCube.html#a9ff6592beaa163bfaf287a8860e9fb3f">FixedCube</a> (<a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;<a class="el" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, <a class="el" href="classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17">SideFactory</a> const &amp;sideFactory)</td></tr>
+<tr class="separator:a9ff6592beaa163bfaf287a8860e9fb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -175,8 +179,22 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaeb94330ddb476b8532747ff2cfdda17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;<a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const&amp;, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const&amp;)&gt; <a class="el" href="classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17">Rubik::FixedCube::SideFactory</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedcube_8hh_source.html#l00055">55</a> of file <a class="el" href="fixedcube_8hh_source.html">fixedcube.hh</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a70555f970901d74e711628faabac3d50"></a>
+<a class="anchor" id="a9ff6592beaa163bfaf287a8860e9fb3f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -187,8 +205,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">Rubik::FixedCube::FixedCube </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRubik_1_1CubeData.html">CubeData</a> const &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17">SideFactory</a> const &amp;&#160;</td>
+          <td class="paramname"><em>sideFactory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -232,17 +260,18 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedcube_8cc_source.html#l00191">191</a> of file <a class="el" href="fixedcube_8cc_source.html">fixedcube.cc</a>.</p>
 
-<p>References <a class="el" href="fixedcube_8cc_source.html#l00186">FixedCube()</a>.</p>
+<p>References <a class="el" href="side_8cc_source.html#l00132">Rubik::Side::create()</a>, and <a class="el" href="fixedcube_8cc_source.html#l00186">FixedCube()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classRubik_1_1FixedCube.html#a70555f970901d74e711628faabac3d50">FixedCube</a>(<a class="code" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>));</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classRubik_1_1FixedCube.html#a9ff6592beaa163bfaf287a8860e9fb3f">FixedCube</a>(<a class="code" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, <a class="code" href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Side::create</a>));</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  }</div>
+<div class="ttc" id="classRubik_1_1FixedCube_html_a9ff6592beaa163bfaf287a8860e9fb3f"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a9ff6592beaa163bfaf287a8860e9fb3f">Rubik::FixedCube::FixedCube</a></div><div class="ttdeci">FixedCube(CubeData const &amp;data, SideFactory const &amp;sideFactory)</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8cc_source.html#l00186">fixedcube.cc:186</a></div></div>
 <div class="ttc" id="classRubik_1_1FixedCube_html_a4b1e31cf4c85b5de4fadba182039a857"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">Rubik::FixedCube::data</a></div><div class="ttdeci">CubeData data()</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8cc_source.html#l00201">fixedcube.cc:201</a></div></div>
+<div class="ttc" id="classRubik_1_1Side_html_accbe0c7bc5b82b06cae6ba536c4a4505"><div class="ttname"><a href="classRubik_1_1Side.html#accbe0c7bc5b82b06cae6ba536c4a4505">Rubik::Side::create</a></div><div class="ttdeci">static Ptr create(Data const &amp;data, Orientation const &amp;orientation)</div><div class="ttdef"><b>Definition:</b> <a href="side_8cc_source.html#l00132">side.cc:132</a></div></div>
 <div class="ttc" id="classRubik_1_1FixedCube_html_a4f11f9fc498c680f16534e83dfd0efe6"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Rubik::FixedCube::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; FixedCube &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8hh_source.html#l00054">fixedcube.hh:54</a></div></div>
-<div class="ttc" id="classRubik_1_1FixedCube_html_a70555f970901d74e711628faabac3d50"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a70555f970901d74e711628faabac3d50">Rubik::FixedCube::FixedCube</a></div><div class="ttdeci">FixedCube(CubeData const &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8cc_source.html#l00186">fixedcube.cc:186</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a43039618b3763459ee214738b3c7a207"></a>
+<a class="anchor" id="a1ce51b252db34e54cc57664dfd56abf9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,7 +287,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::function&lt; <a class="el" href="classRubik_1_1ISide.html#a8e042a65aefc208e695635e5b63dbca9">ISide::Ptr</a>(<a class="el" href="classRubik_1_1Side.html#a3344efdaeb52c7f3f6dd19c0104d8bee">Side::Data</a> const &amp;, <a class="el" href="classRubik_1_1Orientation.html">Orientation</a> const &amp;)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17">SideFactory</a> const &amp;&#160;</td>
           <td class="paramname"><em>sideFactory</em>&#160;</td>
         </tr>
         <tr>
@@ -275,9 +304,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="fixedcube_8cc_source.html#l00196">196</a> of file <a class="el" href="fixedcube_8cc_source.html">fixedcube.cc</a>.</p>
+
+<p>References <a class="el" href="fixedcube_8cc_source.html#l00186">FixedCube()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Ptr</a>(<span class="keyword">new</span> <a class="code" href="classRubik_1_1FixedCube.html#a9ff6592beaa163bfaf287a8860e9fb3f">FixedCube</a>(<a class="code" href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">data</a>, sideFactory));</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
+<div class="ttc" id="classRubik_1_1FixedCube_html_a9ff6592beaa163bfaf287a8860e9fb3f"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a9ff6592beaa163bfaf287a8860e9fb3f">Rubik::FixedCube::FixedCube</a></div><div class="ttdeci">FixedCube(CubeData const &amp;data, SideFactory const &amp;sideFactory)</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8cc_source.html#l00186">fixedcube.cc:186</a></div></div>
+<div class="ttc" id="classRubik_1_1FixedCube_html_a4b1e31cf4c85b5de4fadba182039a857"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a4b1e31cf4c85b5de4fadba182039a857">Rubik::FixedCube::data</a></div><div class="ttdeci">CubeData data()</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8cc_source.html#l00201">fixedcube.cc:201</a></div></div>
 <div class="ttc" id="classRubik_1_1FixedCube_html_a4f11f9fc498c680f16534e83dfd0efe6"><div class="ttname"><a href="classRubik_1_1FixedCube.html#a4f11f9fc498c680f16534e83dfd0efe6">Rubik::FixedCube::Ptr</a></div><div class="ttdeci">boost::shared_ptr&lt; FixedCube &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="fixedcube_8hh_source.html#l00054">fixedcube.hh:54</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -338,7 +371,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceRubik.html">Rubik</a></li><li class="navelem"><a class="el" href="classRubik_1_1FixedCube.html">FixedCube</a></li>
-    <li class="footer">Generated on Sun Jan 31 2016 12:43:21 for Rubik&#39;s cube simulator by
+    <li class="footer">Generated on Sun Jan 31 2016 12:51:38 for Rubik&#39;s cube simulator by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

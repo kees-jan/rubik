@@ -6,6 +6,7 @@ var searchData=
   ['side',['Side',['../classRubik_1_1Side.html#a95d979c97e24f1e4af7383536e3a3d6f',1,'Rubik::Side']]],
   ['side_2ecc',['side.cc',['../side_8cc.html',1,'']]],
   ['side_2ehh',['side.hh',['../side_8hh.html',1,'']]],
+  ['sidefactory',['SideFactory',['../classRubik_1_1FixedCube.html#aaeb94330ddb476b8532747ff2cfdda17',1,'Rubik::FixedCube']]],
   ['stacktrace',['stackTrace',['../namespaceScroom_1_1Utils_1_1Detail.html#a1e4d07474e3b790993ad09c22d4a2c3e',1,'Scroom::Utils::Detail']]],
   ['utils',['Utils',['../namespaceScroom_1_1Utils.html',1,'Scroom']]]
 ];
