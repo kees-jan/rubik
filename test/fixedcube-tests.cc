@@ -9,11 +9,21 @@ using namespace Rubik;
 
 class FixedCubeTests;
 
+namespace
+{
+  typedef std::pair<Orientation, Side::Data> ExpectedInvocation;
+  typedef std::set<ExpectedInvocation> ExpectedInvocations;
+
+  ExpectedInvocations expectedInvocationsFromCubeData(CubeData const& cubeData)
+  {
+    return boost::assign::list_of
+      (make_pair(Orientation(), cubeData.top()));
+  }
+}
+
 class SideFactory
 {
 private:
-  typedef std::pair<Orientation, Side::Data> ExpectedInvocation;
-  typedef std::set<ExpectedInvocation> ExpectedInvocations;
   
 private:
   ExpectedInvocations expectedInvocations;
@@ -37,14 +47,7 @@ public:
     // expectedInvocations.erase(invocation);
     return ISide::Ptr();
   }
-
-  static ExpectedInvocations expectedInvocationsFromCubeData(CubeData const& cubeData);
 };
-
-SideFactory::ExpectedInvocations SideFactory::expectedInvocationsFromCubeData(CubeData const& cubeData)
-{
-  return boost::assign::list_of(make_pair(Orientation(), cubeData.top()));
-}
 
 class FixedCubeTests : public testing::Test
 {
